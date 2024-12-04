@@ -1,1 +1,26 @@
-<p>navbar works!</p>
+<nav>
+    <div class="actions">
+        <a href="https://linkedin.com/in/seu-perfil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/seu-usuario" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <div class="logo">Welcome to Diverintech</div>
+
+    <ul class="menu">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="language-selector">
+        <select [(ngModel)]="selectedLanguage" (change)="changeLanguage(selectedLanguage)">
+            <option *ngFor="let lang of languages" [value]="lang.code">
+                {{ lang.label }}
+            </option>
+        </select>
+    </div>
+</nav>
