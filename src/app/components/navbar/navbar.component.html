@@ -16,10 +16,8 @@
     </ul>
 
     <div class="language-selector">
-        <select [(ngModel)]="selectedLanguage" (change)="changeLanguage(selectedLanguage)">
-            <option *ngFor="let lang of languages" [value]="lang.code">
-                {{ lang.label }}
-            </option>
-        </select>
+        <span (click)="changeLanguage('pt')" class="language-option">PT</span>
+        <span class="separator">|</span>
+        <span (click)="changeLanguage('en')" class="language-option">EN</span>
     </div>
 </nav>

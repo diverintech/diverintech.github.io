@@ -22,7 +22,7 @@ nav {
 }
 
 .actions a:hover {
-  color: #f0a500; /* Cor de destaque ao passar o mouse */
+  color: #f0a500;
 }
 
 .logo {
@@ -64,14 +64,25 @@ nav {
   background-color: #444;
   color: white;
   border: none;
-  padding: 0.5rem;
-  margin-left: 1rem;
-  font-size: 1rem;
   cursor: pointer;
 }
 
 .language-selector select:focus {
   outline: none;
+}
+
+.language-option {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.language-option:hover {
+  color: #ffb800;
+}
+
+.separator {
+  margin: 0 0.1rem;
+  color: white;
 }
 
 @media (max-width: 768px) {
