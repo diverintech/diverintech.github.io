@@ -1,28 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TranslationService } from '../../services/translate.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, FormsModule, FontAwesomeModule, RouterLink],
+  imports: [CommonModule, RouterLink, TranslateModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
 
-  languages = [
-    { code: 'en', label: 'English' },
-    { code: 'pt', label: 'Português' }
-  ];
-
-  selectedLanguage = 'en';
+  constructor(private translationService: TranslationService) { }
 
   changeLanguage(language: string) {
-    this.selectedLanguage = language;
-    console.log(`${language}`);
+    this.translationService.changeLang(language);
   }
 
 }

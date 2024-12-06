@@ -1,19 +1,34 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class AppTranslateService {
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+
+export class TranslationService {
+  defaultLang = 'en';
+
+  constructor(
+    private translateService: TranslateService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    if (isPlatformBrowser(this.platformId)) {
+      const savedLang = localStorage.getItem('lng');
+      if (savedLang) {
+        this.defaultLang = savedLang;
+      }
+      this.translateService.setDefaultLang(this.defaultLang);
+      this.translateService.use(this.defaultLang);
+    }
   }
 
-  changeLanguage(language: string): void {
-    this.translate.use(language);
+  changeLang(lang: string) {
+    console.log(`Changing language to: ${lang}`);
+    this.translateService.use(lang);
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('lng', lang);
+    }
   }
 
-  getCurrentLanguage(): string {
-    return this.translate.currentLang || this.translate.getDefaultLang();
-  }
 }
