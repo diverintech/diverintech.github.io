@@ -1,22 +1,49 @@
 <div class="timeline">
     <div *ngFor="let job of jobs; index as i" class="timeline-point" (click)="selectJob(i)">
         <div class="job-info">
+            <span>{{ job.company }}</span>
+            <br />
             <span>{{ job.roles[0].startDate }} - {{ job.roles[job.roles.length - 1].endDate || ('Present' | translate)
                 }}</span>
-            <br />
-            <span>{{ job.company }}</span>
         </div>
         <div class="point" [class.active]="selectedJobIndex === i"></div>
     </div>
 </div>
 
-<div class="job-details" *ngIf="selectedJobIndex !== null">
-    <h3>{{ jobs[selectedJobIndex].company }}</h3>
-    <ul>
-        <li *ngFor="let role of jobs[selectedJobIndex].roles">
-            <p><strong>Role:</strong> {{ role.title }} </p>
-            <p><strong>Dates:</strong> {{ role.startDate }} - {{ role.endDate || ('Present' | translate) }}</p>
-            <p><strong>Technologies:</strong> {{ role.technologies.join(', ') }}</p>
-        </li>
-    </ul>
+<div class="job-details-main" *ngIf="selectedJobIndex !== null">
+    <div *ngFor="let role of jobs[selectedJobIndex].roles; let j = index">
+        <div class="job-details-container">
+            <div class="job-details">
+                <div class="job-content">
+                    <div class="column-1">
+                        <ul>
+                            <li>
+                                <strong>{{ 'COMPANY' | translate }}:</strong>
+                                {{ jobs[selectedJobIndex].company }}
+                                <span *ngIf="jobs[selectedJobIndex].newName">({{ jobs[selectedJobIndex].newName
+                                    }})</span>
+                            </li>
+                            <li><strong>{{ 'ROLE' | translate }}:</strong> {{ role.title }}</li>
+                            <li><strong>{{ 'DATES' | translate }}:</strong> {{ role.startDate }} - {{ role.endDate ||
+                                ('Present' |
+                                translate) }}</li>
+                            <li><strong>{{ 'TECHNOLOGIES' | translate }}:</strong> {{ role.technologies.join(', ') }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-2">
+                        <div class="job-logo">
+                            <a [href]="jobs[selectedJobIndex].website" target="_blank">
+                                <img [src]="jobs[selectedJobIndex].logo" alt="{{ jobs[selectedJobIndex].company }} Logo"
+                                    class="logo" />
+                            </a>>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-description" *ngIf="role.description">
+                    <p><strong>{{ 'DESCRIPTION' | translate }}:</strong> {{ role.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -4,5 +4,10 @@
     "WORK": "Work",
     "PORTFOLIO": "Portfolio",
     "AllRightsReserved": "All rights reserved",
-    "Present": "Present"
+    "PRESENT": "Present",
+    "COMPANY": "Company",
+    "ROLE": "Role",
+    "DATES": "Dates",
+    "TECHNOLOGIES": "Technologies",
+    "DESCRIPTION": "Description"
 }
