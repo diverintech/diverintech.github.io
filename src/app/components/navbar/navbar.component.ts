@@ -16,7 +16,12 @@ export class NavbarComponent {
   constructor(private translationService: TranslationService) { }
 
   changeLanguage(language: string) {
-    this.translationService.changeLang(language);
+    this.translationService.setLang(language);
   }
+
+  isCurrentLanguage(language: string): boolean {
+    return this.translationService.defaultLang === language;
+  }
+
 
 }

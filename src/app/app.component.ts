@@ -15,4 +15,10 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'Curriculum';
+
+  constructor(private translationService: TranslationService) { }
+
+  ngOnInit(): void {
+    this.translationService.setLang(this.translationService.defaultLang);
+  }
 }

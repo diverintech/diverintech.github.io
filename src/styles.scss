@@ -1,10 +1,32 @@
-body {
-  background: url("assets/image01.jpeg") no-repeat center center fixed;
+$primary-font: "Roboto", sans-serif;
+$primary-color: #fff;
+$background-color: rgba(0, 0, 0, 0.5);
+$highlight-color: #ffb800;
+$footer-height: 60px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-cover($image-path) {
+  background: url(#{$image-path}) no-repeat center center fixed;
   background-size: cover;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  @include background-cover("assets/image01.jpeg");
+  font-family: $primary-font;
+  color: $primary-color;
   margin: 0;
   padding: 0;
+  margin-bottom: $footer-height;
 }
 
 main {
@@ -14,17 +36,25 @@ main {
 
 nav,
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: $background-color;
+  color: $primary-color;
 }
 
 nav a,
 footer p {
-  color: #fff;
+  color: $primary-color;
 }
 
 nav a:hover,
 .actions a:hover,
 .language-option:hover {
-  color: #ffb800;
+  color: $highlight-color;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  line-height: $footer-height;
 }
