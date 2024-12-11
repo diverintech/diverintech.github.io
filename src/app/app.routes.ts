@@ -5,7 +5,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { WorkComponent } from './pages/work/work.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: WorkComponent },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'work', component: WorkComponent },
