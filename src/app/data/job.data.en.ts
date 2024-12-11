@@ -8,18 +8,18 @@ export const JOBS_EN: Job[] = [
     website: 'https://pt.nttdata.com/',
     roles: [
       {
-        title: 'RPA Developer',
-        startDate: 'Sep 2018',
-        endDate: 'Sep 2019',
-        technologies: ['Uipath', 'SQL', 'Excel'],
-        description: 'I worked as an RPA developer using technologies such as UiPath, SQL, and Excel. I contributed to projects for clients like EDP, Hiscox, and BPI, where I was responsible for analyzing and documenting operational processes for automation. I then defined an implementation plan focusing on optimizing and streamlining workflows. After the plan was approved, I developed automated solutions using UiPath, ensuring the clients requirements were met.Finally, the automated programs generated and sent processed reports or information via email to the respective clients.',
-      },
-      {
         title: 'Frontend Developer',
         startDate: 'Sep 2019',
         endDate: 'Aug 2020',
         technologies: ['Angular', 'TypeScript', 'SCSS', 'HTML'],
         description: 'I transitioned from RPA to Frontend, where I took my first steps with HTML and SCSS in a Salesforce project for De Beers. Later, I gained my initial experience with Angular while working on a development project for EDP. This journey allowed me to acquire fundamental frontend skills and expand my expertise in user interface development.',
+      },
+      {
+        title: 'RPA Developer',
+        startDate: 'Sep 2018',
+        endDate: 'Sep 2019',
+        technologies: ['Uipath', 'SQL', 'Excel'],
+        description: 'I worked as an RPA developer using technologies such as UiPath, SQL, and Excel. I contributed to projects for clients like EDP, Hiscox, and BPI, where I was responsible for analyzing and documenting operational processes for automation. I then defined an implementation plan focusing on optimizing and streamlining workflows. After the plan was approved, I developed automated solutions using UiPath, ensuring the clients requirements were met.Finally, the automated programs generated and sent processed reports or information via email to the respective clients.',
       },
     ],
   },

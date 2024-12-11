@@ -8,18 +8,18 @@ export const JOBS_PT: Job[] = [
         website: 'https://pt.nttdata.com/',
         roles: [
             {
-                title: 'RPA Developer',
-                startDate: 'Set 2018',
-                endDate: 'Set 2019',
-                technologies: ['Angular', 'TypeScript', 'SCSS', 'HTML'],
-                description: 'Desempenhei funções como desenvolvedor RPA, utilizando tecnologias como UiPath, SQL e Excel. Trabalhei em projetos para clientes como a EDP, Hiscox e BPI, onde era responsável por realizar o levantamento e análise de processos operacionais a serem automatizados. Posteriormente, definia um plano de implementação com foco na optimização e eficiência dos processos. Após a aprovação do plano, desenvolvia as soluções de automação com recurso ao UiPath, garantindo que os requisitos dos clientes eram atendidos. Por fim, os programas automatizados geravam e enviavam relatórios ou informações tratadas via e-mail para os respetivos clientes.',
-            },
-            {
                 title: 'Frontend Developer',
                 startDate: 'Set 2019',
                 endDate: 'Agt 2020',
                 technologies: ['Angular', 'TypeScript', 'SCSS', 'HTML'],
                 description: 'Transitei da área de RPA para Frontend, onde dei os meus primeiros passos com HTML e SCSS num projeto de Salesforce para a De Beers. Posteriormente, tive o meu primeiro contacto com Angular ao integrar a equipa de desenvolvimento num projeto para a EDP. Este percurso permitiu-me adquirir conhecimentos fundamentais em tecnologias de frontend e expandir a minha experiência no desenvolvimento de interfaces de utilizador.',
+            },
+            {
+                title: 'RPA Developer',
+                startDate: 'Set 2018',
+                endDate: 'Set 2019',
+                technologies: ['Angular', 'TypeScript', 'SCSS', 'HTML'],
+                description: 'Desempenhei funções como desenvolvedor RPA, utilizando tecnologias como UiPath, SQL e Excel. Trabalhei em projetos para clientes como a EDP, Hiscox e BPI, onde era responsável por realizar o levantamento e análise de processos operacionais a serem automatizados. Posteriormente, definia um plano de implementação com foco na optimização e eficiência dos processos. Após a aprovação do plano, desenvolvia as soluções de automação com recurso ao UiPath, garantindo que os requisitos dos clientes eram atendidos. Por fim, os programas automatizados geravam e enviavam relatórios ou informações tratadas via e-mail para os respetivos clientes.',
             },
         ],
     },

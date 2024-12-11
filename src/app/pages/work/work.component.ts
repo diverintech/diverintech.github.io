@@ -32,11 +32,16 @@ export class WorkComponent implements OnInit, OnDestroy {
    */
   ngOnInit(): void {
     this.jobsSubscription = this.translationService.jobs$.subscribe((jobs) => {
-      // Assign the fetched jobs to the local jobs array
+      // Store the currently selected job index
+      const previousSelectedIndex = this.selectedJobIndex;
+
+      // Update the list of jobs
       this.jobs = jobs;
 
-      // Automatically select the last job in the timeline by default if the list is not empty
-      if (this.jobs.length > 0) {
+      // Restore the index if it is still valid, otherwise select the last job
+      if (previousSelectedIndex !== null && previousSelectedIndex < this.jobs.length) {
+        this.selectedJobIndex = previousSelectedIndex;
+      } else if (this.jobs.length > 0) {
         this.selectedJobIndex = this.jobs.length - 1;
       }
     });

@@ -15,6 +15,17 @@ export class NavbarComponent {
 
   constructor(private translationService: TranslationService) { }
 
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
+
+
   changeLanguage(language: string) {
     this.translationService.setLang(language);
   }
@@ -25,3 +36,4 @@ export class NavbarComponent {
 
 
 }
+

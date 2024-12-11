@@ -1,5 +1,6 @@
-<nav>
-    <div class="actions">
+<!-- navbar.component.html -->
+<nav class="navbar" aria-label="Main navigation">
+    <div class="navbar__logos">
         <a href="https://www.linkedin.com/in/joanagaivotapires/" target="_blank" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
         </a>
@@ -8,16 +9,22 @@
         </a>
     </div>
 
-    <ul class="menu">
-        <li><a routerLink="/home" routerLinkActive="active">{{ 'HOME' | translate }}</a></li>
-        <li><a routerLink="/about" routerLinkActive="active">{{ 'ABOUT' | translate }}</a></li>
-        <li><a routerLink="/work" routerLinkActive="active">{{ 'WORK' | translate }}</a></li>
-        <li><a routerLink="/portfolio" routerLinkActive="active">{{ 'PORTFOLIO' | translate }}</a></li>
-    </ul>
+    <div class="navbar__hamburger" (click)="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
 
-    <div class="language-selector">
-        <span (click)="changeLanguage('pt')" class="language-option">PT</span>
-        <span class="separator">|</span>
-        <span (click)="changeLanguage('en')" class="language-option">EN</span>
+    <div class="navbar__menu" [class.open]="menuOpen">
+        <ul class="navbar__tabs" (click)="closeMenu()">
+            <li><a routerLink="/home" routerLinkActive="active">{{ 'HOME' | translate }}</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">{{ 'ABOUT' | translate }}</a></li>
+            <li><a routerLink="/work" routerLinkActive="active">{{ 'WORK' | translate }}</a></li>
+            <li><a routerLink="/portfolio" routerLinkActive="active">{{ 'PORTFOLIO' | translate }}</a></li>
+        </ul>
+
+        <div class="language-selector" (click)="closeMenu()">
+            <span (click)="changeLanguage('pt')" class="language-option">PT</span>
+            <span class="separator">|</span>
+            <span (click)="changeLanguage('en')" class="language-option">EN</span>
+        </div>
     </div>
 </nav>
