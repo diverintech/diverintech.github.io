@@ -1,0 +1,8 @@
+<h2>{{ 'QUESTION' | translate }}: {{ question }}</h2>
+<input type="number" [(ngModel)]="userAnswer" [placeholder]="'PLACEHOLDER' | translate" [class.error]="tryAgain"
+    (keydown.enter)="checkAnswer()" />
+<div class="error-message" *ngIf="errorMessage">{{ errorMessage | translate }}</div>
+<div class="buttons">
+    <button class="verify" (click)="checkAnswer()">{{ 'VERIFY' | translate }}</button>
+    <button class="cancel" (click)="closeDialog()">{{ 'CANCEL' | translate }}</button>
+</div>

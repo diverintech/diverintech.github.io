@@ -1,1 +1,26 @@
-<app-under-construction></app-under-construction>
+<div class="about-container">
+    <div class="animated-container">
+        <div class="flowing-quotes">
+            <span>👨‍💻 {{ 'QUOTE_1' | translate }}</span>
+            <span>🌐 {{ 'QUOTE_2' | translate }}</span>
+            <span>✨ {{ 'QUOTE_3' | translate }}</span>
+        </div>
+    </div>
+
+    <p class="intro">{{ 'INTRO_ABOUT' | translate }}</p>
+
+    <div class="buttons">
+        <button mat-button [disabled]="disableButtons" (click)="openPuzzle()">
+            {{ 'PUZZLE_BUTTON' | translate }}
+        </button>
+        <button mat-button [disabled]="disableButtons" (click)="openMathQuiz()">
+            {{ 'MATH_BUTTON' | translate }}
+        </button>
+    </div>
+
+
+    <div *ngIf="showTextAboutMe" class="showTextAboutMe">
+        <h2>{{ 'CONGRATULATIONS' | translate }}</h2>
+        <p>{{ 'ABOUT_ME_TEXT' | translate }}</p>
+    </div>
+</div>

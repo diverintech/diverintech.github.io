@@ -1,0 +1,12 @@
+<span class="teste">
+    <h2>Complete o puzzle</h2>
+    <!-- <div cdkDropList (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let item of items" cdkDrag>{{ item }}</div>
+    </div> -->
+    <button mat-button (click)="completePuzzle()">Completei</button>
+
+    <!-- Mensagem de sucesso quando o puzzle for completado -->
+    <div *ngIf="puzzleCompleted">
+        <p>Parabéns, conseguiste! Clique <a>aqui</a> para saber mais.</p>
+    </div>
+</span>
