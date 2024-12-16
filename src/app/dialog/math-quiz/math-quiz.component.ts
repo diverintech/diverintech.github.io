@@ -18,14 +18,12 @@ export class MathQuizComponent {
   public question: string = ''; // Holds the current math question as a string.
   public showInformation = false; // Controls the display of additional information after a correct answer.
   public tryAgain = false; // Tracks whether the user needs to try again after a wrong answer.
-  public disableButton = false; // Disables the buttons after a correct answer.
   public errorMessage = ''; // Holds the dynamic error message to be displayed when the user answers incorrectly.
 
 
   constructor(
     private mathService: MathQuizService,
     private dialogRef: MatDialogRef<MathQuizComponent>,
-    private translate: TranslateService
   ) {
     this.generateNewQuestion();
   }
@@ -40,7 +38,6 @@ export class MathQuizComponent {
     const correctAnswer = this.mathService.getResult();
     if (this.userAnswer === correctAnswer) {
       this.showInformation = true;
-      this.disableButton = true;
       this.closeDialog(true);
     } else {
       this.tryAgain = true;

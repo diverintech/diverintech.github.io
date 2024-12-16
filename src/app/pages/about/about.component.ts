@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PuzzleComponent } from '../../components/puzzle/puzzle.component';
-import { MathQuizComponent } from '../../components/math-quiz/math-quiz.component';
+import { MathQuizComponent } from '../../dialog/math-quiz/math-quiz.component';
+import { PuzzleComponent } from '../../dialog/puzzle/puzzle.component';
 
 @Component({
   selector: 'app-about',
