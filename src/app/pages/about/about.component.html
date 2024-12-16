@@ -7,15 +7,17 @@
         </div>
     </div>
 
-    <p class="intro">{{ 'INTRO_ABOUT' | translate }}</p>
+    <div *ngIf="!showTextAboutMe">
+        <p class="intro">{{ 'INTRO_ABOUT' | translate }}</p>
 
-    <div class="buttons">
-        <button mat-button [disabled]="disableButtons" (click)="openPuzzle()">
-            {{ 'PUZZLE_BUTTON' | translate }}
-        </button>
-        <button mat-button [disabled]="disableButtons" (click)="openMathQuiz()">
-            {{ 'MATH_BUTTON' | translate }}
-        </button>
+        <div class="buttons">
+            <button mat-button (click)="openPuzzle()">
+                {{ 'PUZZLE_BUTTON' | translate }}
+            </button>
+            <button mat-button (click)="openMathQuiz()">
+                {{ 'MATH_BUTTON' | translate }}
+            </button>
+        </div>
     </div>
 
 

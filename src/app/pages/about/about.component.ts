@@ -14,7 +14,6 @@ import { MathQuizComponent } from '../../components/math-quiz/math-quiz.componen
 })
 export class AboutComponent {
   showTextAboutMe: boolean = false;
-  disableButtons: boolean = false;
 
   constructor(private dialog: MatDialog) { }
 
@@ -24,20 +23,16 @@ export class AboutComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.showTextAboutMe = true;
-        this.disableButtons = true;
       }
     });
   }
 
   openMathQuiz(): void {
-    const dialogRef = this.dialog.open(MathQuizComponent, {
-      disableClose: true
-    });
+    const dialogRef = this.dialog.open(MathQuizComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.showTextAboutMe = true;
-        this.disableButtons = true;
       }
     });
   }
