@@ -1,10 +1,12 @@
+@import '../../../styles.scss';
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: #ffffff;
+  background-color: $primary-color;
+  color: $text-light;
   position: relative;
 
   &__logos {
@@ -12,12 +14,12 @@
     gap: 1rem;
 
     a {
-      color: #ffffff;
       font-size: 1.5rem;
+      color: $text-light;
       text-decoration: none;
 
       &:hover {
-        color: #f0a500;
+        color: $highlight-color;
       }
     }
   }
@@ -26,7 +28,7 @@
     display: block;
     font-size: 2rem;
     cursor: pointer;
-    color: #f9f9f9;
+    color: $text-light;
   }
 
   &__menu {
@@ -34,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #f9f9f9;
+    background-color: $text-light;
     position: absolute;
     top: 100%;
     left: 0;
@@ -43,7 +45,7 @@
     z-index: 10;
     &.open {
       display: flex;
-      background-color: #ccc;
+      background-color: $text-light;
     }
 
     .navbar__tabs {
@@ -58,10 +60,10 @@
         a {
           text-decoration: none;
           font-size: 1.2rem;
-          color: #000;
+          color: $text-black;
 
           &:hover {
-            color: #f0a500;
+            color: $highlight-color;
           }
         }
       }
@@ -70,7 +72,7 @@
     .language-selector {
       display: flex;
       gap: 0.5rem;
-      color: #000;
+      color: $text-black;
       margin-right: 0.5rem;
 
       .language-option {
@@ -104,7 +106,7 @@
 
       &.open {
         display: flex;
-        background-color: #000;
+        background-color: $text-black;
       }
 
       .navbar__tabs {
@@ -113,14 +115,14 @@
 
         li {
           a {
-            color: #f9f9f9;
+            color: $text-light;
           }
         }
       }
 
       .language-selector {
         justify-self: flex-end;
-        color: #f9f9f9;
+        color: $text-light;
         margin-right: 0;
       }
     }
