@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -153,14 +155,14 @@
 
 h3 {
   margin-top: 0;
-  color: black;
+  color: $text-black;
 }
 
 ul {
   padding-left: 1.25rem;
-  color: black;
+  color: $text-black;
 }
 
 p {
-  color: black;
+  color: $text-black;
 }
