@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./math-quiz.component.scss'],
 })
 export class MathQuizComponent {
-  public userAnswer!: number | null; // Stores the user's answer; allows null for resetting the input field.
+  public userAnswer: number | null = null // Stores the user's answer; allows null for resetting the input field.
   public question: string = ''; // Holds the current math question as a string.
   public showInformation = false; // Controls the display of additional information after a correct answer.
   public tryAgain = false; // Tracks whether the user needs to try again after a wrong answer.
