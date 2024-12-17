@@ -15,6 +15,12 @@ import { PuzzleComponent } from '../../dialog/puzzle/puzzle.component';
 export class AboutComponent {
   showTextAboutMe: boolean = false;
 
+  quotes = [
+    { icon: '👨‍💻', text: 'QUOTE_1' },
+    { icon: '🌐', text: 'QUOTE_2' },
+    { icon: '✨', text: 'QUOTE_3' }
+  ];
+
   constructor(private dialog: MatDialog) { }
 
   openPuzzle(): void {
