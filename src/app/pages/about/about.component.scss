@@ -51,6 +51,7 @@ $margin-bottom: 1.25rem;
 
       @media (min-width: 480px) {
         animation: flowingQuotes 20s linear infinite;
+        -webkit-animation: flowingQuotes 20s linear infinite;
       }
 
       @media (min-width: 768px) {
