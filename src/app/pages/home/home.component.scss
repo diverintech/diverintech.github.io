@@ -1,3 +1,54 @@
 .home-container {
-  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007acc;
+      color: white;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #005f99;
+      }
+
+      &:focus {
+        outline: 2px solid #003f66;
+      }
+    }
+  }
 }

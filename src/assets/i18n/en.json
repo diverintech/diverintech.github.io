@@ -17,11 +17,16 @@
     "CANCEL": "Cancel",
     "ERROR_MESSAGE": "Wrong answer. Please try again.",
     "INTRO_ABOUT": "Hi, my name is Joana, and as you might have guessed, I love challenges. So, I’ve prepared a little quiz before sharing more about me. You can choose between solving a puzzle or answering a small math question. Have fun!",
+    "INTRO_HOME": "This site was built using the Angular 19 framework to create a more interactive and personal version of my resume. Here, you can learn about my professional journey and explore the technical side of the project.",
     "PUZZLE_BUTTON": "Puzzle",
     "MATH_BUTTON": "Math Question",
     "CONGRATULATIONS": "Congratulations, you solved the mystery!",
     "ABOUT_ME_TEXT": "So, my name is Joana, I live in Portugal, and I graduated with a master’s degree in Physics Engineering from the Faculty of Sciences of the University of Lisbon. After my studies, I couldn’t find opportunities in the field, so I decided to pursue programming, which allowed me to complement my knowledge with technology. Each project has given me the chance to learn new tools, so I decided to apply some of my knowledge to create this online resume. Outside of work, I enjoy traveling (who doesn’t?), playing escape games, gardening, and testing new gadgets. Want to know more? Then reach out to me on LinkedIn.",
     "QUOTE_1": "Technology is best when it brings people together. — Matt Mullenweg",
     "QUOTE_2": "Life is like riding a bicycle. To keep your balance, you must keep moving. — Albert Einstein",
-    "QUOTE_3": "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt"
+    "QUOTE_3": "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt",
+    "github": "Not just for developers! This site was hosted for free using GitHub Pages, allowing anyone to view it directly in their browser:",
+    "github_link": "diverintech.github.io",
+    "navigation_invite": "Navigate through the resume using the tabs: About, Work, and Portfolio.",
+    "title_home": "Welcome to My Web Resume!"
 }
