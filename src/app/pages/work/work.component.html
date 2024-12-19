@@ -3,7 +3,7 @@
         <div class="job-info">
             <span>{{ job.company }}</span>
             <br />
-            <span>{{ job.roles[0].startDate }} - {{ job.roles[job.roles.length - 1].endDate || ('Present' | translate)
+            <span>{{ job.roles[0].startDate }} - {{ job.roles[job.roles.length - 1].endDate || ('present' | translate)
                 }}</span>
         </div>
         <div class="point" [class.active]="selectedJobIndex === i"></div>
@@ -18,16 +18,16 @@
                     <div class="column-1">
                         <ul>
                             <li>
-                                <strong>{{ 'COMPANY' | translate }}:</strong>
+                                <strong>{{ 'company' | translate }}:</strong>
                                 {{ jobs[selectedJobIndex].company }}
                                 <span *ngIf="jobs[selectedJobIndex].newName">({{ jobs[selectedJobIndex].newName
                                     }})</span>
                             </li>
-                            <li><strong>{{ 'ROLE' | translate }}:</strong> {{ role.title }}</li>
-                            <li><strong>{{ 'DATES' | translate }}:</strong> {{ role.startDate }} - {{ role.endDate ||
-                                ('Present' |
+                            <li><strong>{{ 'role' | translate }}:</strong> {{ role.title }}</li>
+                            <li><strong>{{ 'dates' | translate }}:</strong> {{ role.startDate }} - {{ role.endDate ||
+                                ('present' |
                                 translate) }}</li>
-                            <li><strong>{{ 'TECHNOLOGIES' | translate }}:</strong> {{ role.technologies.join(', ') }}
+                            <li><strong>{{ 'technologies' | translate }}:</strong> {{ role.technologies.join(', ') }}
                             </li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="job-description" *ngIf="role.description">
-                    <p><strong>{{ 'DESCRIPTION' | translate }}:</strong> {{ role.description }}</p>
+                    <p><strong>{{ 'description' | translate }}:</strong> {{ role.description }}</p>
                 </div>
             </div>
         </div>

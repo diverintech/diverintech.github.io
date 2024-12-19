@@ -1,3 +1,95 @@
 .home-container {
-  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 4rem;
+
+  @media (min-width: 600px) {
+    padding: 3rem 8rem;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 5rem 12rem;
+  }
+
+  @media (min-width: 1500px) {
+    padding: 5rem 20rem;
+  }
+
+  .information-container {
+    color: black;
+    .name {
+    }
+
+    .profession {
+    }
+  }
+
+  .language-selector {
+    color: black;
+  }
+
+  .introduction {
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #555;
+
+    @media (min-width: 600px) {
+    }
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .buttons-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    @media (min-width: 700px) {
+      display: flex;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: 2px solid #007acc;
+      border-radius: 30px; /* borda arredondada */
+      background-color: white;
+      color: #007acc;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; /* animações suaves */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
+
+      /* Efeito ao passar o mouse */
+      &:hover {
+        background-color: #007acc;
+        color: white;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px); /* levitação sutil */
+      }
+
+      /* Efeito ao pressionar o botão */
+      &:active {
+        transform: translateY(1px); /* afunda o botão */
+      }
+
+      &:focus {
+        outline: 3px solid #005f99;
+      }
+    }
+  }
 }
