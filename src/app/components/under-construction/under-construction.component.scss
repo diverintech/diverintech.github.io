@@ -1,13 +1,15 @@
+@import '../../../styles.scss';
+
 .under-construction {
   text-align: center;
 
   h1 {
     font-size: 2rem;
-    color: #e74c3c;
+    color: $alert-color;
   }
 
   p {
     font-size: 1.2rem;
-    color: #333;
+    color: $primary-color;
   }
 }

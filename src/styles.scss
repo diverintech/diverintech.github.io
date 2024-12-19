@@ -1,7 +1,13 @@
 $primary-font: "Roboto", sans-serif;
-$primary-color: #fff;
-$background-color: rgba(0, 0, 0, 0.5);
+
+$text-black: #000;
+$text-light: #fff;
+
+$primary-color: #333;
+$secondary-color: lightgray;
 $highlight-color: #ffb800;
+$alert-color: #e74c3c;
+
 $footer-height: 60px;
 
 @mixin flex-center {
@@ -23,7 +29,7 @@ html {
 body {
   @include background-cover("assets/image01.jpeg");
   font-family: $primary-font;
-  color: $primary-color;
+  color: $text-light;
   margin: 0;
   padding: 0;
   margin-bottom: $footer-height;
@@ -36,13 +42,13 @@ main {
 
 nav,
 footer {
-  background-color: $background-color;
-  color: $primary-color;
+  background-color: $primary-color;
+  color: $text-light;
 }
 
 nav a,
 footer p {
-  color: $primary-color;
+  color: $text-light;
 }
 
 // nav a:hover,
