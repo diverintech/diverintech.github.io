@@ -1,17 +1,26 @@
 <div class="home-container">
-    <h1>{{ 'title_home' | translate }}</h1>
+    <div class="information-container">
+        <h1 class="name">{{ 'myName' | translate }}</h1>
+        <h2 class="profession">{{ 'profession' | translate }}</h2>
+    </div>
     <app-language-selector class="language-selector"></app-language-selector>
-    <p>{{ 'INTRO_HOME' | translate }}</p>
-    <p>
-        {{ 'github' | translate }}
-        <a href="https://github.com/diverintech/diverintech.github.io" target="_blank">
-            {{ 'github_link' | translate }}
-        </a>
-    </p>
-    <p>{{ 'navigation_invite' | translate }}</p>
+
+    <div class="introduction">
+        <p>{{ 'homePage.introP1' | translate }} </p>
+        <p>{{ 'homePage.introP2' | translate }} </p>
+        <p>{{ 'homePage.introP3' | translate }}
+            <a [href]="'githubRepo' | translate" target="_blank">{{ 'AQUI' | translate }}</a>.
+        </p>
+        <p>{{ 'homePage.introP4' | translate }}
+        </p>
+        <p>{{ 'homePage.introP5' | translate }}
+        </p>
+    </div>
+
+
     <div class="buttons-container">
-        <button routerLink="/about">{{ 'ABOUT' | translate }}</button>
-        <button routerLink="/work">{{ 'WORK' | translate }}</button>
-        <button routerLink="/portfolio">{{ 'PORTFOLIO' | translate }}</button>
+        <button routerLink="/about">{{ 'about' | translate }}</button>
+        <button routerLink="/work">{{ 'work' | translate }}</button>
+        <button routerLink="/portfolio">{{ 'portfolio' | translate }}</button>
     </div>
 </div>

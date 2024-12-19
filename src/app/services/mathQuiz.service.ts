@@ -40,7 +40,9 @@ export class MathQuizService {
             case '/':
                 return parseFloat((number1 / number2).toFixed(2));
             default:
-                throw new Error('Operação inválida');
+                throw new Error('Invalid operation');
         }
     }
 }
+
+// TODO: Replace error message
