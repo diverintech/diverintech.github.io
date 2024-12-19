@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { TranslationService } from '../../services/translate.service';
 
 @Component({
-  selector: 'app-language',
+  selector: 'app-language-selector',
   imports: [],
-  templateUrl: './language.component.html',
-  styleUrl: './language.component.scss'
+  templateUrl: './language-selector.component.html',
+  styleUrl: './language-selector.component.scss'
 })
-export class LanguageComponent {
+export class LanguageSelectorComponent {
 
   constructor(private translationService: TranslationService) { }
 
