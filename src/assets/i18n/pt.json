@@ -12,9 +12,9 @@
     "githubRepo": "https://github.com/diverintech/diverintech.github.io",
     "home": "Início",
     "homePage": {
-        "introP1": "Olá! Eu sou a Joana, e sou uma Software Developer!",
-        "introP2": "Criei este espaço para compartilhar os projetos que tenho trabalhado no GitHub e um pouco sobre a minha experiência profissional.",
-        "introP3": "Se tens curiosidade sobre a parte técnica desta página, ela foi construída utilizando Angular (versão 19), um framework frontend. Sente-te à vontade para conferir o código, disponível no meu repositório público do GitHub:",
+        "introP1": "Olá e bem vind@ à minha web page!",
+        "introP2": "Criei esta página com o proprósito de partilhar os projectos que tenho vindo a desenvolver no github e achei que ela prórpia devia fazer parte do meu portofólio.",
+        "introP3": "Esta página foi desenvolvida em Angular (Frontend Framework) e o código está disponível no meu repositório público do GitHub:",
         "introP4": "Além disso, utilizei o GitHub Pages para fazer o deploy, assim podes aceder de qualquer lugar sem precisar de um IDE.",
         "introP5": "Convido-te a explorar as seções acima para saberes mais sobre o meu trabalho:"
     },

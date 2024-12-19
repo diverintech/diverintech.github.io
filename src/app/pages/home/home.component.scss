@@ -20,17 +20,14 @@
   .information-container {
     color: black;
     .name {
-      font-size: 40px;
     }
 
     .profession {
-      font-size: 22px;
     }
   }
 
   .language-selector {
     color: black;
-    padding: 1rem;
   }
 
   .introduction {
@@ -40,12 +37,10 @@
   }
 
   p {
-    font-size: 15px;
     margin-bottom: 1.5rem;
     color: #555;
 
     @media (min-width: 600px) {
-      font-size: 20px;
     }
   }
 
@@ -69,21 +64,31 @@
     }
 
     button {
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: 2px solid #007acc;
+      border-radius: 30px; /* borda arredondada */
+      background-color: white;
+      color: #007acc;
       cursor: pointer;
-      background-color: #007acc;
-      color: white;
-      transition: background-color 0.3s;
+      transition: all 0.3s ease-in-out; /* animações suaves */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
 
+      /* Efeito ao passar o mouse */
       &:hover {
-        background-color: #005f99;
+        background-color: #007acc;
+        color: white;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px); /* levitação sutil */
+      }
+
+      /* Efeito ao pressionar o botão */
+      &:active {
+        transform: translateY(1px); /* afunda o botão */
       }
 
       &:focus {
-        outline: 2px solid #003f66;
+        outline: 3px solid #005f99;
       }
     }
   }
