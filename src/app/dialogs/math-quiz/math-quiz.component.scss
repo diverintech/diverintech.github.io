@@ -1,0 +1,156 @@
+@use "../../../../src/styles" as *;
+@use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    margin-bottom: 20px;
+    color: var(--text-color-secondary);
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 5px;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .error-message {
+    color: var(--notification-color-error);
+    margin: 1rem auto 2rem auto;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: var(--text-color-primary);
+
+      &.verify {
+        background-color: var(--buton-color-success-primary);
+
+        &:hover {
+          background-color: var(--buton-color-success-secondary);
+        }
+      }
+
+      &.cancel {
+        background-color: var(--buton-color-error-primary);
+
+        &:hover {
+          background-color: var(--buton-color-error-secondary);
+        }
+      }
+    }
+  }
+}
+
+@include media-query-max("xs") {
+  :host {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+
+  .buttons {
+    gap: 8px;
+
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+@include media-query-max("s") {
+  :host {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .error-message {
+    font-size: 15px;
+  }
+
+  .buttons {
+    gap: 10px;
+
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@include media-query-min("l") {
+  :host {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .error-message {
+    font-size: 16px;
+  }
+
+  .buttons {
+    gap: 10px;
+
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+}

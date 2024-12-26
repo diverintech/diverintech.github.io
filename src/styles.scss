@@ -1,3 +1,9 @@
+@use "@angular/material" as mat;
+
+@use "../src/assets/shared-styles/colors.scss" as *;
+@use "../src/assets/shared-styles/mediaQueries.scss" as *;
+@use "../src/assets/shared-styles/text.scss" as *;
+
 $primary-font: "Roboto", sans-serif;
 
 $text-black: #000;
@@ -27,7 +33,7 @@ html {
 }
 
 body {
-  @include background-cover("assets/image01.jpeg");
+  @include background-cover("assets/images/image01.jpeg");
   font-family: $primary-font;
   color: $text-light;
   margin: 0;

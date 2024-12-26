@@ -1,0 +1,8 @@
+@use "../../../../src/styles" as *;
+@use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
+
+.portfolio-container {
+  margin: 5rem;
+}

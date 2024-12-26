@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { TranslationService } from './services/translate.service';
+import { FooterComponent } from './shared-components/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
+import { TranslationService } from './core/services/translate.service';
+import { NavbarComponent } from './shared-components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',

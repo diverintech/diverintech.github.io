@@ -4,7 +4,7 @@ export const JOBS_PT: Job[] = [
     {
         company: 'Everis',
         newName: 'Ntt Data',
-        logo: 'assets/logo_nttdata.jpeg',
+        logo: 'assets/images_logos/logo_nttdata.jpeg',
         website: 'https://pt.nttdata.com/',
         roles: [
             {
@@ -26,7 +26,7 @@ export const JOBS_PT: Job[] = [
     {
         company: 'TechFirm',
         newName: 'Bubble Goo',
-        logo: 'assets/logo_bubbleGoo.jpeg',
+        logo: 'assets/images_logos/logo_bubbleGoo.jpeg',
         website: 'https://bubble-go.pt/',
         roles: [
             {
@@ -40,7 +40,7 @@ export const JOBS_PT: Job[] = [
     },
     {
         company: 'Diconium',
-        logo: 'assets/logo_diconium.jpeg',
+        logo: 'assets/images_logos/logo_diconium.jpeg',
         website: 'https://diconium.com/en/',
         roles: [
             {

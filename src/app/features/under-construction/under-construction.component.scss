@@ -1,0 +1,18 @@
+@use "../../../../src/styles" as *;
+@use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
+
+.under-construction {
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    color: var(--notification-color-error);
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: var(--text-color-secondary);
+  }
+}
