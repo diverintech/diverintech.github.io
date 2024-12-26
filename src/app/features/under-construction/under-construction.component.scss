@@ -1,0 +1,15 @@
+@use "../../../../src/styles" as *;
+
+.under-construction {
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    color: $alert-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+}
