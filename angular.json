@@ -39,6 +39,15 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
+            },
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": [
+                  "color-functions",
+                  "global-builtin",
+                  "mixed-decls"
+                ]
+              }
             }
           },
           "configurations": {

@@ -1,4 +1,5 @@
 @use "../../../../src/styles" as *;
+@use "../../../assets/shared-styles/mediaQueries.scss" as *;
 
 .navbar {
   display: flex;
@@ -43,6 +44,7 @@
     width: 100%;
     padding: 1rem;
     z-index: 10;
+
     &.open {
       display: flex;
       background-color: $text-light;
@@ -71,7 +73,7 @@
   }
 
   /* Estilos para desktop */
-  @media (min-width: 768px) {
+  @include media-query-min("m") {
     &__hamburger {
       display: none;
     }

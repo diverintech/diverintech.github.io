@@ -1,0 +1,31 @@
+// TODO Alterar as cores
+
+:root {
+  --background-color-primary: 255, 255, 255;
+  --background-color-secondary: 240, 240, 240;
+  --background-color-alternative: 220, 220, 220;
+
+  --text-color-primary: #000;
+  --text-color-secondary: #555;
+  --text-color-alternative: #333;
+
+  --border-color-primary: #ddd;
+  --border-color-secondary: #bbb;
+
+  --notification-color-error: #fc1717;
+}
+
+:root[data-theme="dark"] {
+  --background-color-primary: 14, 20, 24;
+  --background-color-secondary: 28, 32, 36;
+  --background-color-alternative: 50, 58, 64;
+
+  --text-color-primary: #fff;
+  --text-color-secondary: #aaa;
+  --text-color-alternative: #ddd;
+
+  --border-color-primary: #666;
+  --border-color-secondary: #888;
+
+  --notification-color-error: #fc1717;
+}
