@@ -1,3 +1,6 @@
+@use "../../../../src/styles" as *;
+@use "../../../assets/shared-styles/mediaQueries.scss" as *;
+
 $primary-color: #3f51b5;
 $primary-hover: #303f9f;
 $secondary-color: #f44336;
@@ -49,18 +52,18 @@ $margin-bottom: 1.25rem;
 
       animation: flowingQuotes 15s linear infinite;
 
-      @media (min-width: 480px) {
+      @include media-query-min("xs") {
         animation: flowingQuotes 20s linear infinite;
         -webkit-animation: flowingQuotes 20s linear infinite;
       }
 
-      @media (min-width: 768px) {
+      @include media-query-min("m") {
         animation: flowingQuotes 25s linear infinite;
         -webkit-animation: flowingQuotes 25s linear infinite;
         font-size: $font-size_2;
       }
 
-      @media (min-width: 1280px) {
+      @include media-query-min("l") {
         animation: flowingQuotes 35s linear infinite;
         -webkit-animation: flowingQuotes 35s linear infinite;
       }
@@ -76,7 +79,7 @@ $margin-bottom: 1.25rem;
     margin-right: 1rem;
     margin-left: 1rem;
 
-    @media (min-width: 1280px) {
+    @include media-query-min("l") {
       margin-right: 8rem;
       margin-left: 8rem;
     }
@@ -133,12 +136,12 @@ p {
   word-wrap: break-word;
   word-break: break-word;
 
-  @media (min-width: 768px) {
+  @include media-query-min("m") {
     font-size: $font-size_2;
   }
 }
 
-@media (max-width: 48em) {
+@include media-query-max("s") {
   :host {
     padding: 1.25rem;
   }
@@ -158,7 +161,7 @@ p {
   }
 }
 
-@media (max-width: 30em) {
+@include media-query-max("xs") {
   .about-container {
     padding: 0.3125rem;
   }

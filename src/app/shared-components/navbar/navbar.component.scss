@@ -72,7 +72,6 @@
     }
   }
 
-  /* Estilos para desktop */
   @include media-query-min("m") {
     &__hamburger {
       display: none;
