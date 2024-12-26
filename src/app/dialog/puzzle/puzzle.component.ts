@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CdkDragDrop } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { UnderConstructionComponent } from '../../components/under-construction/under-construction.component';

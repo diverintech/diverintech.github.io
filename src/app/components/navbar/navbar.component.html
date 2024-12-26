@@ -15,16 +15,14 @@
 
     <div class="navbar__menu" [class.open]="menuOpen">
         <ul class="navbar__tabs" (click)="closeMenu()">
-            <li><a routerLink="/home" routerLinkActive="active">{{ 'HOME' | translate }}</a></li>
-            <li><a routerLink="/about" routerLinkActive="active">{{ 'ABOUT' | translate }}</a></li>
-            <li><a routerLink="/work" routerLinkActive="active">{{ 'WORK' | translate }}</a></li>
-            <li><a routerLink="/portfolio" routerLinkActive="active">{{ 'PORTFOLIO' | translate }}</a></li>
+            <li><a routerLink="/home" routerLinkActive="active">{{ 'home' | translate }}</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">{{ 'about' | translate }}</a></li>
+            <li><a routerLink="/work" routerLinkActive="active">{{ 'work' | translate }}</a></li>
+            <li><a routerLink="/portfolio" routerLinkActive="active">{{ 'portfolio' | translate }}</a></li>
         </ul>
 
         <div class="language-selector" (click)="closeMenu()">
-            <span (click)="changeLanguage('pt')" class="language-option">PT</span>
-            <span class="separator">|</span>
-            <span (click)="changeLanguage('en')" class="language-option">EN</span>
+            <app-language-selector></app-language-selector>
         </div>
     </div>
 </nav>
