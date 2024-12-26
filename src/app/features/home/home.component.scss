@@ -1,4 +1,7 @@
+@use "../../../../src/styles" as *;
 @use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
 
 .home-container {
   display: flex;
@@ -20,7 +23,8 @@
   }
 
   .information-container {
-    color: black;
+    color: var(--text-color-secondary);
+
     .name {
     }
 
@@ -29,7 +33,7 @@
   }
 
   .language-selector {
-    color: black;
+    color: var(--text-color-secondary);
   }
 
   .introduction {
@@ -40,19 +44,9 @@
 
   p {
     margin-bottom: 1.5rem;
-    color: #555;
+    color: var(--text-color-alternative);
 
     @include media-query-min("s") {
-    }
-  }
-
-  a {
-    color: #007acc;
-    text-decoration: none;
-    font-weight: bold;
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 
@@ -70,7 +64,7 @@
       font-size: 1.1rem;
       border: 2px solid #007acc;
       border-radius: 30px;
-      background-color: white;
+      background-color: var(--background-color-secondary);
       color: #007acc;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
@@ -78,7 +72,7 @@
 
       &:hover {
         background-color: #007acc;
-        color: white;
+        color: var(--text-color-primary);
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         transform: translateY(-3px);
       }

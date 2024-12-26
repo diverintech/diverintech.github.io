@@ -1,4 +1,7 @@
+@use "../../../../src/styles" as *;
 @use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
 
 :host {
   display: flex;
@@ -11,7 +14,7 @@
 
   h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: var(--text-color-secondary);
   }
 
   input {
@@ -20,18 +23,17 @@
     padding: 10px;
     font-size: 16px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color-primary);
     border-radius: 5px;
     text-align: center;
 
     &:focus {
-      border-color: #3f51b5;
       outline: none;
     }
   }
 
   .error-message {
-    color: #f44336;
+    color: var(--notification-color-error);
     margin: 1rem auto 2rem auto;
   }
 
@@ -48,22 +50,21 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
+      color: var(--text-color-primary);
 
       &.verify {
-        background-color: #4caf50;
-        color: white;
+        background-color: var(--buton-color-success-primary);
 
         &:hover {
-          background-color: #45a049;
+          background-color: var(--buton-color-success-secondary);
         }
       }
 
       &.cancel {
-        background-color: #f44336;
-        color: white;
+        background-color: var(--buton-color-error-primary);
 
         &:hover {
-          background-color: #e53935;
+          background-color: var(--buton-color-error-secondary);
         }
       }
     }

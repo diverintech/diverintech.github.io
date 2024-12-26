@@ -1,5 +1,7 @@
 @use "../../../../src/styles" as *;
 @use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
 
 .timeline {
   display: flex;
@@ -13,7 +15,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: var(--background-color-primary);
     z-index: -1;
     width: 0.2rem;
     height: 100%;
@@ -42,7 +44,7 @@
   margin: 1rem 0;
 
   .job-info {
-    color: black;
+    color: var(--text-color-secondary);
     font-size: 14px;
     margin-bottom: 0rem;
     text-align: center;
@@ -58,7 +60,7 @@
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: var(--background-color-alternative);
     cursor: pointer;
     transition: transform 0.2s, background-color 0.2s;
     position: absolute;
@@ -69,7 +71,7 @@
     &.active {
       left: 50.33%;
       transform: translate(-50%, -50%) scale(1.2);
-      background-color: black;
+      background-color: var(--background-color-primary);
     }
   }
 
@@ -83,7 +85,7 @@
   margin: 1rem auto;
 
   .job-details-container {
-    background-color: #f4f4f4;
+    background-color: var(--background-color-alternative_2);
     border-radius: 10px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     display: flex;
@@ -156,14 +158,14 @@
 
 h3 {
   margin-top: 0;
-  color: $text-black;
+  color: var(--text-color-secondary);
 }
 
 ul {
   padding-left: 1.25rem;
-  color: $text-black;
+  color: var(--text-color-secondary);
 }
 
 p {
-  color: $text-black;
+  color: var(--text-color-secondary);
 }

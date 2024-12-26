@@ -1,19 +1,14 @@
 @use "../../../../src/styles" as *;
 @use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
 
-$primary-color: #3f51b5;
-$primary-hover: #303f9f;
-$secondary-color: #f44336;
-$secondary-hover: #d32f2f;
-$background-color: #f9f9f9;
-$border-color: #ccc;
-$text-color: black;
-$font-size_1: 14px;
-$font-size_2: 16px;
-$font-family: Arial, sans-serif;
-$color_white: #f9f9f9;
+$puzzle-buton-color-primary: #3f51b5;
+$puzzle-buton-color-secondary: #303f9f;
 
-$button-font-size: 0.875rem;
+$math-buton-color-primary: #f44336;
+$math-buton-color-secondary: #d32f2f;
+
 $padding: 1rem;
 $margin-bottom: 1.25rem;
 
@@ -31,7 +26,7 @@ $margin-bottom: 1.25rem;
   flex-direction: column;
   text-align: center;
   padding: 2rem;
-  font-family: $font-family;
+  font-family: $font-family-primary;
   max-width: 80%;
   margin: 0 auto;
 
@@ -42,10 +37,10 @@ $margin-bottom: 1.25rem;
     .flowing-quotes {
       display: flex;
       flex-direction: row;
-      font-size: $font-size_1;
+      font-size: $font-size-small;
       font-style: italic;
       white-space: nowrap;
-      color: $text-color;
+      color: var(--text-color-secondary);
       font-weight: bold;
       margin-left: 50px;
       margin-top: 3vh;
@@ -60,7 +55,7 @@ $margin-bottom: 1.25rem;
       @include media-query-min("m") {
         animation: flowingQuotes 25s linear infinite;
         -webkit-animation: flowingQuotes 25s linear infinite;
-        font-size: $font-size_2;
+        font-size: $font-size-medium;
       }
 
       @include media-query-min("l") {
@@ -91,27 +86,27 @@ $margin-bottom: 1.25rem;
     button {
       margin: 0.3125rem;
       padding: 0.625rem 1.25rem;
-      font-size: $button-font-size;
+      font-size: $font-size-small;
       border: none;
       border-radius: 0.3125rem;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:nth-child(1) {
-        background-color: $primary-color;
-        color: $color_white;
+        background-color: $puzzle-buton-color-primary;
+        color: var(--text-color-primary);
 
         &:hover {
-          background-color: $primary-hover;
+          background-color: $puzzle-buton-color-secondary;
         }
       }
 
       &:nth-child(2) {
-        background-color: $secondary-color;
-        color: $color_white;
+        background-color: $math-buton-color-primary;
+        color: var(--text-color-primary);
 
         &:hover {
-          background-color: $secondary-hover;
+          background-color: $math-buton-color-secondary;
         }
       }
     }
@@ -121,23 +116,23 @@ $margin-bottom: 1.25rem;
     width: 80%;
     margin: 0rem auto 0 auto;
     padding: 1rem;
-    border: 1px dashed $border-color;
+    border: 1px dashed var(--border-color-primary);
     border-radius: 0.3125rem;
-    background-color: $background-color;
-    color: $text-color;
+    background-color: var(--text-color-primary);
+    color: var(--text-color-secondary);
   }
 }
 
 p {
-  color: $text-color;
+  color: var(--text-color-secondary);
   margin-bottom: $margin-bottom;
   line-height: 1.5;
-  font-size: $font-size_1;
+  font-size: $font-size-small;
   word-wrap: break-word;
   word-break: break-word;
 
   @include media-query-min("m") {
-    font-size: $font-size_2;
+    font-size: $font-size-medium;
   }
 }
 

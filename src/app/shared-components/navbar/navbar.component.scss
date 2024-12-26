@@ -1,13 +1,13 @@
 @use "../../../../src/styles" as *;
 @use "../../../assets/shared-styles/mediaQueries.scss" as *;
+@use "../../../assets/shared-styles/colors.scss" as *;
+@use "../../../assets/shared-styles/text.scss" as *;
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: $primary-color;
-  color: $text-light;
   position: relative;
 
   &__logos {
@@ -16,11 +16,10 @@
 
     a {
       font-size: 1.5rem;
-      color: $text-light;
       text-decoration: none;
 
       &:hover {
-        color: $highlight-color;
+        color: var(--hover-color);
       }
     }
   }
@@ -29,7 +28,6 @@
     display: block;
     font-size: 2rem;
     cursor: pointer;
-    color: $text-light;
   }
 
   &__menu {
@@ -37,17 +35,17 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: $text-light;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem;
     z-index: 10;
+    color: var(--text-color-primary);
 
     &.open {
       display: flex;
-      background-color: $text-light;
+      background-color: var(--background-color-primary);
     }
 
     .navbar__tabs {
@@ -62,10 +60,9 @@
         a {
           text-decoration: none;
           font-size: 1.2rem;
-          color: $text-black;
 
           &:hover {
-            color: $highlight-color;
+            color: var(--hover-color);
           }
         }
       }
@@ -86,30 +83,18 @@
       border-top: none;
 
       &.open {
-        display: flex;
-        background-color: $text-black;
+        display: contents;
       }
 
       .navbar__tabs {
         flex-direction: row;
         gap: 2rem;
-
-        li {
-          a {
-            color: $text-light;
-          }
-        }
       }
 
       .language-selector {
         justify-self: flex-end;
-        color: $text-light;
         margin-right: 0;
       }
     }
   }
-}
-
-.language-selector {
-  color: black;
 }

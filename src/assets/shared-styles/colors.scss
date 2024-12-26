@@ -1,18 +1,28 @@
 // TODO Alterar as cores
 
 :root {
-  --background-color-primary: 255, 255, 255;
-  --background-color-secondary: 240, 240, 240;
-  --background-color-alternative: 220, 220, 220;
+  --background-color-primary: #333;
+  --background-color-secondary: #fff;
+  --background-color-alternative: lightgray;
+  --background-color-alternative_2: #f4f4f4;
 
-  --text-color-primary: #000;
-  --text-color-secondary: #555;
-  --text-color-alternative: #333;
+  --text-color-primary: #fff;
+  --text-color-secondary: #000;
+  --text-color-alternative: #555;
 
-  --border-color-primary: #ddd;
-  --border-color-secondary: #bbb;
+  --border-color-primary: #ccc;
+  --border-color-secondary: #ddd;
 
-  --notification-color-error: #fc1717;
+  --notification-color-error: #e74c3c;
+  --notification-color-success: #4caf50;
+
+  --buton-color-error-primary: #f44336;
+  --buton-color-error-secondary: #e53935;
+
+  --buton-color-success-primary: #4caf50;
+  --buton-color-success-secondary: #45a049;
+
+  --hover-color: #ffb800;
 }
 
 :root[data-theme="dark"] {
