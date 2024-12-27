@@ -1,0 +1,35 @@
+name: Dependency Check
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * MON" # every Monday at 6:00 AM UTC
+
+jobs:
+  check-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+      - name: Check audit results
+        id: audit
+        run: |
+          if [ "$(npm audit --audit-level=high)" ]; then
+            echo "Audit failed" > audit_failed.txt
+            exit 1
+          fi
