@@ -24,12 +24,3 @@ jobs:
 
       - name: Audit dependencies
         run: npm audit --audit-level=high
-        continue-on-error: true
-
-      - name: Check audit results
-        id: audit
-        run: |
-          if [ "$(npm audit --audit-level=high)" ]; then
-            echo "Audit failed" > audit_failed.txt
-            exit 1
-          fi
