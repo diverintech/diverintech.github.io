@@ -11,19 +11,18 @@ import { MathQuizService } from '../../core/services/mathQuiz.service';
   standalone: true,
   imports: [CommonModule, TranslateModule, MatButtonModule, FormsModule],
   templateUrl: './math-quiz.component.html',
-  styleUrls: ['./math-quiz.component.scss'],
+  styleUrls: ['./math-quiz.component.scss']
 })
 export class MathQuizComponent {
-  public userAnswer: number | null = null // Stores the user's answer; allows null for resetting the input field.
+  public userAnswer: number | null = null; // Stores the user's answer; allows null for resetting the input field.
   public question = ''; // Holds the current math question as a string.
   public showInformation = false; // Controls the display of additional information after a correct answer.
   public tryAgain = false; // Tracks whether the user needs to try again after a wrong answer.
   public errorMessage = ''; // Holds the dynamic error message to be displayed when the user answers incorrectly.
 
-
   constructor(
     private mathService: MathQuizService,
-    private dialogRef: MatDialogRef<MathQuizComponent>,
+    private dialogRef: MatDialogRef<MathQuizComponent>
   ) {
     this.generateNewQuestion();
   }
@@ -50,7 +49,3 @@ export class MathQuizComponent {
     this.dialogRef.close(success);
   }
 }
-
-
-
-

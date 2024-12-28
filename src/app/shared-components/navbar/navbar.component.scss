@@ -1,7 +1,7 @@
-@use "../../../../src/styles" as *;
-@use "../../../assets/shared-styles/mediaQueries.scss" as *;
-@use "../../../assets/shared-styles/colors.scss" as *;
-@use "../../../assets/shared-styles/text.scss" as *;
+@use '../../../../src/styles' as *;
+@use '../../../assets/shared-styles/mediaQueries.scss' as *;
+@use '../../../assets/shared-styles/colors.scss' as *;
+@use '../../../assets/shared-styles/text.scss' as *;
 
 .navbar {
   display: flex;
@@ -69,7 +69,7 @@
     }
   }
 
-  @include media-query-min("m") {
+  @include media-query-min('m') {
     &__hamburger {
       display: none;
     }

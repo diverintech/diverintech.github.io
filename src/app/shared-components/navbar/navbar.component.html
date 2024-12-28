@@ -1,28 +1,59 @@
 <!-- navbar.component.html -->
 <nav class="navbar" aria-label="Main navigation">
-    <div class="navbar__logos">
-        <a href={{linkedinUrl}} target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href={{githubUrl}} target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
+  <div class="navbar__logos">
+    <a href="{{ linkedinUrl }}" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="{{ githubUrl }}" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
 
-    <div class="navbar__hamburger" (click)="toggleMenu()" (keydown.enter)="toggleMenu()" tabindex="0">
-        <i class="fas fa-bars"></i>
-    </div>
+  <div
+    class="navbar__hamburger"
+    (click)="toggleMenu()"
+    (keydown.enter)="toggleMenu()"
+    tabindex="0"
+  >
+    <i class="fas fa-bars"></i>
+  </div>
 
-    <div class="navbar__menu" [class.open]="menuOpen">
-        <ul class="navbar__tabs" (click)="closeMenu()" (keydown.enter)="closeMenu()" tabindex="0">
-            <li><a routerLink="/home" routerLinkActive="active">{{ 'home' | translate }}</a></li>
-            <li><a routerLink="/about" routerLinkActive="active">{{ 'about' | translate }}</a></li>
-            <li><a routerLink="/work" routerLinkActive="active">{{ 'work' | translate }}</a></li>
-            <li><a routerLink="/portfolio" routerLinkActive="active">{{ 'portfolio' | translate }}</a></li>
-        </ul>
+  <div class="navbar__menu" [class.open]="menuOpen">
+    <ul
+      class="navbar__tabs"
+      (click)="closeMenu()"
+      (keydown.enter)="closeMenu()"
+      tabindex="0"
+    >
+      <li>
+        <a routerLink="/home" routerLinkActive="active">{{
+          'home' | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active">{{
+          'about' | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/work" routerLinkActive="active">{{
+          'work' | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/portfolio" routerLinkActive="active">{{
+          'portfolio' | translate
+        }}</a>
+      </li>
+    </ul>
 
-        <div class="language-selector" (click)="closeMenu()" (keydown.enter)="closeMenu()" tabindex="0">
-            <app-language-selector></app-language-selector>
-        </div>
+    <div
+      class="language-selector"
+      (click)="closeMenu()"
+      (keydown.enter)="closeMenu()"
+      tabindex="0"
+    >
+      <app-language-selector></app-language-selector>
     </div>
+  </div>
 </nav>

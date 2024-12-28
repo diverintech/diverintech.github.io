@@ -15,12 +15,12 @@ import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
 export class AboutComponent {
   showTextAboutMe = false;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {}
 
   openPuzzle(): void {
     const dialogRef = this.dialog.open(PuzzleComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       if (result) {
         this.showTextAboutMe = true;
       }
@@ -30,15 +30,10 @@ export class AboutComponent {
   openMathQuiz(): void {
     const dialogRef = this.dialog.open(MathQuizComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       if (result) {
         this.showTextAboutMe = true;
       }
     });
   }
-
-
 }
-
-
-

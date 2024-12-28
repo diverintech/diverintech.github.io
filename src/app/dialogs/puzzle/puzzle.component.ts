@@ -11,7 +11,6 @@ import { UnderConstructionComponent } from '../../features/under-construction/un
   styleUrl: './puzzle.component.scss'
 })
 export class PuzzleComponent {
-
   puzzleCompleted = false;
 
   completePuzzle(): void {

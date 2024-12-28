@@ -8,7 +8,7 @@ import { JOBS_EN } from '../../data/job.data.en';
 import { Job } from '../../interfaces/job.interface';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class TranslationService {
   // Default language for the application

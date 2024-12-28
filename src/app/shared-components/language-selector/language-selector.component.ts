@@ -9,8 +9,7 @@ import { TranslationService } from '../../core/services/translate.service';
   styleUrl: './language-selector.component.scss'
 })
 export class LanguageSelectorComponent {
-
-  constructor(private translationService: TranslationService) { }
+  constructor(private translationService: TranslationService) {}
 
   changeLanguage(language: string) {
     this.translationService.setLang(language);

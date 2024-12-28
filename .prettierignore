@@ -1,2 +1,4 @@
-coverage
-dist
+dist/
+package-lock.json
+*.min.js
+*.snap

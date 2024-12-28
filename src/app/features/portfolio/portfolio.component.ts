@@ -10,6 +10,4 @@ import { UnderConstructionComponent } from '../under-construction/under-construc
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
-
-}
+export class PortfolioComponent {}

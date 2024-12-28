@@ -1,7 +1,7 @@
-@use "../../../../src/styles" as *;
-@use "../../../assets/shared-styles/mediaQueries.scss" as *;
-@use "../../../assets/shared-styles/colors.scss" as *;
-@use "../../../assets/shared-styles/text.scss" as *;
+@use '../../../../src/styles' as *;
+@use '../../../assets/shared-styles/mediaQueries.scss' as *;
+@use '../../../assets/shared-styles/colors.scss' as *;
+@use '../../../assets/shared-styles/text.scss' as *;
 
 :host {
   display: flex;
@@ -71,7 +71,7 @@
   }
 }
 
-@include media-query-max("xs") {
+@include media-query-max('xs') {
   :host {
     padding: 1rem;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@include media-query-max("s") {
+@include media-query-max('s') {
   :host {
     padding: 1.5rem;
   }
@@ -127,7 +127,7 @@
   }
 }
 
-@include media-query-min("l") {
+@include media-query-min('l') {
   :host {
     padding: 2rem;
   }
