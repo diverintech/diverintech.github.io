@@ -1,44 +1,44 @@
 {
-    "allRightsReserved": "Todos os direitos reservados",
-    "aboutPage": {
-        "aboutMeText": "Então, eu chamo-me Joana, moro em Portugal e tirei o mestrado integrado em engenharia Física na Faculdade de Ciências da Universidade de Lisboa. Após a minha formação, não encontrei nada na área e decidi enveredar pelo caminho da programação, o que me permitiu complementar a minha formação em tecnologias. Cada projeto tem-me permitido aprender ferramentas novas, e por isso decidi aplicar um pouco do meu conhecimento a fazer este currículo online. Fora do trabalho, gosto de viajar (quem não?), jogar exit games, jardinagem e testar novos gadgets. Queres saber mais? Então entra em contacto comigo através do LinkedIn.",
-        "congratulations": "Parabéns, resolveste o mistério!",
-        "introAbout": "Olá, o meu nome é Joana e como deves estar a pensar gosto de desafios. Por isso, preparei um pequeno quiz antes de dar toda a informação. Podes escolher entre resolver um puzzle ou uma pequena questão matemática. Diverte-te!"
-    },
-    "dates": "Datas",
-    "description": "Descrição",
-    "errorMessage": "Resposta errada. Por favor, tente novamente.",
-    "githubLink": "diverintech.github.io",
-    "githubRepo": "https://github.com/diverintech/diverintech.github.io",
-    "home": "Início",
-    "homePage": {
-        "introP1": "Olá e bem vind@ à minha web page!",
-        "introP2": "Criei esta página com o proprósito de partilhar os projectos que tenho vindo a desenvolver no github e achei que ela prórpia devia fazer parte do meu portofólio.",
-        "introP3": "Esta página foi desenvolvida em Angular (Frontend Framework) e o código está disponível no meu repositório público do GitHub:",
-        "introP4": "Além disso, utilizei o GitHub Pages para fazer o deploy, assim podes aceder de qualquer lugar sem precisar de um IDE.",
-        "introP5": "Convido-te a explorar as seções acima para saberes mais sobre o meu trabalho:"
-    },
-    "mathButton": "Questão Matemática",
-    "myName": "Joana Pires",
-    "placeholder": "Digite sua resposta",
-    "portfolio": "Portfólio",
-    "present": "Presente",
-    "profession": "Software Developer",
-    "puzzleButton": "Puzzle",
-    "quotes": {
-        "quote1": "A tecnologia é melhor quando une as pessoas. — Matt Mullenweg",
-        "quote2": "A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso continuar em movimento. — Albert Einstein",
-        "quote3": "O futuro pertence àqueles que acreditam na beleza dos seus sonhos. — Eleanor Roosevelt"
-    },
-    "question": "Qual é a resposta para",
-    "role": "Função",
-    "technologies": "Tecnologias",
-    "titleHome": "Bem vindo!",
-    "underConstruction": "Esta página está em construção. Volte mais tarde!",
-    "verify": "Verificar",
-    "work": "Trabalho",
-    "about": "Sobre",
-    "cancel": "Cancelar",
-    "company": "Empresa",
-    "invalidOperationError": "Operação inválida"
+  "allRightsReserved": "Todos os direitos reservados",
+  "aboutPage": {
+    "aboutMeText": "Então, eu chamo-me Joana, moro em Portugal e tirei o mestrado integrado em engenharia Física na Faculdade de Ciências da Universidade de Lisboa. Após a minha formação, não encontrei nada na área e decidi enveredar pelo caminho da programação, o que me permitiu complementar a minha formação em tecnologias. Cada projeto tem-me permitido aprender ferramentas novas, e por isso decidi aplicar um pouco do meu conhecimento a fazer este currículo online. Fora do trabalho, gosto de viajar (quem não?), jogar exit games, jardinagem e testar novos gadgets. Queres saber mais? Então entra em contacto comigo através do LinkedIn.",
+    "congratulations": "Parabéns, resolveste o mistério!",
+    "introAbout": "Olá, o meu nome é Joana e como deves estar a pensar gosto de desafios. Por isso, preparei um pequeno quiz antes de dar toda a informação. Podes escolher entre resolver um puzzle ou uma pequena questão matemática. Diverte-te!"
+  },
+  "dates": "Datas",
+  "description": "Descrição",
+  "errorMessage": "Resposta errada. Por favor, tente novamente.",
+  "githubLink": "diverintech.github.io",
+  "githubRepo": "https://github.com/diverintech/diverintech.github.io",
+  "home": "Início",
+  "homePage": {
+    "introP1": "Olá e bem vind@ à minha web page!",
+    "introP2": "Criei esta página com o proprósito de partilhar os projectos que tenho vindo a desenvolver no github e achei que ela prórpia devia fazer parte do meu portofólio.",
+    "introP3": "Esta página foi desenvolvida em Angular (Frontend Framework) e o código está disponível no meu repositório público do GitHub:",
+    "introP4": "Além disso, utilizei o GitHub Pages para fazer o deploy, assim podes aceder de qualquer lugar sem precisar de um IDE.",
+    "introP5": "Convido-te a explorar as seções acima para saberes mais sobre o meu trabalho:"
+  },
+  "mathButton": "Questão Matemática",
+  "myName": "Joana Pires",
+  "placeholder": "Digite sua resposta",
+  "portfolio": "Portfólio",
+  "present": "Presente",
+  "profession": "Software Developer",
+  "puzzleButton": "Puzzle",
+  "quotes": {
+    "quote1": "A tecnologia é melhor quando une as pessoas. — Matt Mullenweg",
+    "quote2": "A vida é como andar de bicicleta. Para manter o equilíbrio, é preciso continuar em movimento. — Albert Einstein",
+    "quote3": "O futuro pertence àqueles que acreditam na beleza dos seus sonhos. — Eleanor Roosevelt"
+  },
+  "question": "Qual é a resposta para",
+  "role": "Função",
+  "technologies": "Tecnologias",
+  "titleHome": "Bem vindo!",
+  "underConstruction": "Esta página está em construção. Volte mais tarde!",
+  "verify": "Verificar",
+  "work": "Trabalho",
+  "about": "Sobre",
+  "cancel": "Cancelar",
+  "company": "Empresa",
+  "invalidOperationError": "Operação inválida"
 }

@@ -7,12 +7,13 @@ import { LanguageSelectorComponent } from '../../shared-components/language-sele
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, TranslateModule, RouterLink, LanguageSelectorComponent],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    RouterLink,
+    LanguageSelectorComponent,
+  ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-
-export class HomeComponent {
-
-
-}
+export class HomeComponent {}

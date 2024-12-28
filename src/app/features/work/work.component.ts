@@ -23,7 +23,7 @@ export class WorkComponent implements OnInit, OnDestroy {
   private jobsSubscription: Subscription = new Subscription();
 
   // Injecting the TranslationService to access the jobs data
-  constructor(private translationService: TranslationService) { }
+  constructor(private translationService: TranslationService) {}
 
   /**
    * Lifecycle hook that runs when the component is initialized.
@@ -39,7 +39,10 @@ export class WorkComponent implements OnInit, OnDestroy {
       this.jobs = jobs;
 
       // Restore the index if it is still valid, otherwise select the last job
-      if (previousSelectedIndex !== null && previousSelectedIndex < this.jobs.length) {
+      if (
+        previousSelectedIndex !== null &&
+        previousSelectedIndex < this.jobs.length
+      ) {
         this.selectedJobIndex = previousSelectedIndex;
       } else if (this.jobs.length > 0) {
         this.selectedJobIndex = this.jobs.length - 1;

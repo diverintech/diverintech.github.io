@@ -6,11 +6,10 @@ import { TranslationService } from '../../core/services/translate.service';
   standalone: true,
   imports: [],
   templateUrl: './language-selector.component.html',
-  styleUrl: './language-selector.component.scss'
+  styleUrl: './language-selector.component.scss',
 })
 export class LanguageSelectorComponent {
-
-  constructor(private translationService: TranslationService) { }
+  constructor(private translationService: TranslationService) {}
 
   changeLanguage(language: string) {
     this.translationService.setLang(language);

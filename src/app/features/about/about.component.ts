@@ -10,17 +10,17 @@ import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  showTextAboutMe: boolean = false;
+  showTextAboutMe = false;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {}
 
   openPuzzle(): void {
     const dialogRef = this.dialog.open(PuzzleComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       if (result) {
         this.showTextAboutMe = true;
       }
@@ -30,15 +30,10 @@ export class AboutComponent {
   openMathQuiz(): void {
     const dialogRef = this.dialog.open(MathQuizComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       if (result) {
         this.showTextAboutMe = true;
       }
     });
   }
-
-
 }
-
-
-

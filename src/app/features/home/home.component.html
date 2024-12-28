@@ -1,22 +1,21 @@
 <div class="home-container">
-    <div class="information-container">
-        <h1 class="name">{{ 'myName' | translate }}</h1>
-        <h2 class="profession">{{ 'profession' | translate }}</h2>
-    </div>
-    <app-language-selector class="language-selector"></app-language-selector>
+  <div class="information-container">
+    <h1 class="name">{{ 'myName' | translate }}</h1>
+    <h2 class="profession">{{ 'profession' | translate }}</h2>
+  </div>
+  <app-language-selector class="language-selector"></app-language-selector>
 
-    <div class="introduction">
-        <p>{{ 'homePage.introP1' | translate }} </p>
-        <!-- <p>{{ 'homePage.introP2' | translate }} </p>
+  <div class="introduction">
+    <p>{{ 'homePage.introP1' | translate }}</p>
+    <!-- <p>{{ 'homePage.introP2' | translate }} </p>
         <p>{{ 'homePage.introP3' | translate }}
             <a [href]="'githubRepo' | translate" target="_blank">{{ 'AQUI' | translate }}</a>.
         </p> -->
-    </div>
+  </div>
 
-
-    <div class="buttons-container">
-        <button routerLink="/about">{{ 'about' | translate }}</button>
-        <button routerLink="/work">{{ 'work' | translate }}</button>
-        <button routerLink="/portfolio">{{ 'portfolio' | translate }}</button>
-    </div>
+  <div class="buttons-container">
+    <button routerLink="/about">{{ 'about' | translate }}</button>
+    <button routerLink="/work">{{ 'work' | translate }}</button>
+    <button routerLink="/portfolio">{{ 'portfolio' | translate }}</button>
+  </div>
 </div>

@@ -8,24 +8,26 @@ import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterLink, TranslateModule, LanguageSelectorComponent],
+  imports: [
+    CommonModule,
+    RouterLink,
+    TranslateModule,
+    LanguageSelectorComponent,
+  ],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-
   linkedinUrl = `${environment.urls.linkedinUrl}`;
   githubUrl = `${environment.urls.githubUrl}`;
 
+  public menuOpen = false;
 
-  menuOpen = false;
-
-  toggleMenu() {
+  public toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
 
-  closeMenu() {
+  public closeMenu() {
     this.menuOpen = false;
   }
-
 }
