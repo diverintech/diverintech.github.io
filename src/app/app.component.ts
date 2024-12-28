@@ -4,7 +4,7 @@ import {
   NavigationEnd,
   Router,
   RouterModule,
-  RouterOutlet
+  RouterOutlet,
 } from '@angular/router';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -21,10 +21,10 @@ import { NavbarComponent } from './shared-components/navbar/navbar.component';
     RouterModule,
     NavbarComponent,
     FooterComponent,
-    TranslateModule
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   public title = 'Curriculum';
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private translationService: TranslationService,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {

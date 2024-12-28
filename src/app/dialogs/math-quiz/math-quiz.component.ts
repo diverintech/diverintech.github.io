@@ -11,7 +11,7 @@ import { MathQuizService } from '../../core/services/mathQuiz.service';
   standalone: true,
   imports: [CommonModule, TranslateModule, MatButtonModule, FormsModule],
   templateUrl: './math-quiz.component.html',
-  styleUrls: ['./math-quiz.component.scss']
+  styleUrls: ['./math-quiz.component.scss'],
 })
 export class MathQuizComponent {
   public userAnswer: number | null = null; // Stores the user's answer; allows null for resetting the input field.
@@ -22,7 +22,7 @@ export class MathQuizComponent {
 
   constructor(
     private mathService: MathQuizService,
-    private dialogRef: MatDialogRef<MathQuizComponent>
+    private dialogRef: MatDialogRef<MathQuizComponent>,
   ) {
     this.generateNewQuestion();
   }

@@ -8,7 +8,7 @@ import { JOBS_EN } from '../../data/job.data.en';
 import { Job } from '../../interfaces/job.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TranslationService {
   // Default language for the application
@@ -27,7 +27,7 @@ export class TranslationService {
    */
   constructor(
     private translateService: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: object
+    @Inject(PLATFORM_ID) private platformId: object,
   ) {
     // Check if the code is running in the browser
     if (isPlatformBrowser(this.platformId)) {

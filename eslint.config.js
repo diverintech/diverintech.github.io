@@ -13,7 +13,7 @@ module.exports = tseslint.config(
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
-      prettierConfig
+      prettierConfig,
     ],
     plugins: { prettier },
     processor: angular.processInlineTemplates,
@@ -23,26 +23,26 @@ module.exports = tseslint.config(
         {
           type: 'attribute',
           prefix: 'app',
-          style: 'camelCase'
-        }
+          style: 'camelCase',
+        },
       ],
       '@angular-eslint/component-selector': [
         'error',
         {
           type: 'element',
           prefix: 'app',
-          style: 'kebab-case'
-        }
+          style: 'kebab-case',
+        },
       ],
-      'prettier/prettier': 'error'
-    }
+      'prettier/prettier': 'error',
+    },
   },
   {
     files: ['**/*.html'],
     extends: [
       ...angular.configs.templateRecommended,
-      ...angular.configs.templateAccessibility
+      ...angular.configs.templateAccessibility,
     ],
-    rules: {}
-  }
+    rules: {},
+  },
 );

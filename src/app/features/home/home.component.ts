@@ -11,9 +11,9 @@ import { LanguageSelectorComponent } from '../../shared-components/language-sele
     CommonModule,
     TranslateModule,
     RouterLink,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {}

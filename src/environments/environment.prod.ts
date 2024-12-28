@@ -6,6 +6,6 @@ export const environment: EnvironmentModel = {
   environment: 'prod',
   urls: {
     linkedinUrl: 'https://www.linkedin.com/in/joanagaivotapires/',
-    githubUrl: 'https://github.com/diverintech'
-  }
+    githubUrl: 'https://github.com/diverintech',
+  },
 };

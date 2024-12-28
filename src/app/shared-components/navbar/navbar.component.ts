@@ -12,10 +12,10 @@ import { environment } from '../../../environments/environment';
     CommonModule,
     RouterLink,
     TranslateModule,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
   ],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
   linkedinUrl = `${environment.urls.linkedinUrl}`;

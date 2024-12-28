@@ -8,7 +8,7 @@ import { UnderConstructionComponent } from '../../features/under-construction/un
   standalone: true,
   imports: [CommonModule, TranslateModule, UnderConstructionComponent],
   templateUrl: './puzzle.component.html',
-  styleUrl: './puzzle.component.scss'
+  styleUrl: './puzzle.component.scss',
 })
 export class PuzzleComponent {
   puzzleCompleted = false;

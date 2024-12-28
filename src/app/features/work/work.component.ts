@@ -10,7 +10,7 @@ import { TranslationService } from '../../core/services/translate.service';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent implements OnInit, OnDestroy {
   // Array to store the list of jobs received from the service

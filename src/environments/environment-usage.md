@@ -65,7 +65,7 @@ The environment files contain a TypeScript object defining environment-specific 
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:3000/api',
-  appName: 'MyApp'
+  appName: 'MyApp',
 };
 ```
 
@@ -75,7 +75,7 @@ export const environment = {
 export const environment = {
   production: true,
   apiUrl: 'https://api.myapp.com',
-  appName: 'MyApp'
+  appName: 'MyApp',
 };
 ```
 

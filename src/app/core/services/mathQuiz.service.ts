@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MathQuizService {
   private number1 = 0;
@@ -31,7 +31,7 @@ export class MathQuizService {
   private calculateResult(
     number1: number,
     number2: number,
-    operation: string
+    operation: string,
   ): number {
     switch (operation) {
       case '+':

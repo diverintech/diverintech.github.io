@@ -10,7 +10,7 @@ import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrl: './about.component.scss',
 })
 export class AboutComponent {
   showTextAboutMe = false;
