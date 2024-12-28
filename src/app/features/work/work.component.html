@@ -1,5 +1,6 @@
 <div class="timeline">
-    <div *ngFor="let job of jobs; index as i" class="timeline-point" (click)="selectJob(i)">
+    <div *ngFor="let job of jobs; index as i" class="timeline-point" (click)="selectJob(i)" (keyup.enter)="selectJob(i)"
+        tabindex="0">
         <div class="job-info">
             <span>{{ job.company }}</span>
             <br />

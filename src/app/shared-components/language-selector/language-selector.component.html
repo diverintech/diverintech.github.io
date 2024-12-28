@@ -1,5 +1,7 @@
 <div class="language-selector">
-    <span (click)="changeLanguage('pt')" class="language-option">PT</span>
+    <span (click)="changeLanguage('pt')" (keydown.enter)="changeLanguage('pt')" tabindex="0"
+        class="language-option">PT</span>
     <span class="separator">|</span>
-    <span (click)="changeLanguage('en')" class="language-option">EN</span>
+    <span (click)="changeLanguage('en')" (keydown.enter)="changeLanguage('en')" tabindex="0"
+        class="language-option">EN</span>
 </div>

@@ -18,13 +18,13 @@ export class NavbarComponent {
   githubUrl = `${environment.urls.githubUrl}`;
 
 
-  menuOpen = false;
+  public menuOpen = false;
 
-  toggleMenu() {
+  public toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
 
-  closeMenu() {
+  public closeMenu() {
     this.menuOpen = false;
   }
 

@@ -5,9 +5,9 @@ import { Injectable } from "@angular/core";
 })
 
 export class MathQuizService {
-    private number1: number = 0;
-    private number2: number = 0;
-    private operation: string = '';
+    private number1 = 0;
+    private number2 = 0;
+    private operation = '';
 
     constructor() {
         this.generateNewQuestion();

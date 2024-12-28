@@ -13,7 +13,7 @@ import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  showTextAboutMe: boolean = false;
+  showTextAboutMe = false;
 
   constructor(private dialog: MatDialog) { }
 

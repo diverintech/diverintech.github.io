@@ -12,7 +12,7 @@ import { UnderConstructionComponent } from '../../features/under-construction/un
 })
 export class PuzzleComponent {
 
-  puzzleCompleted: boolean = false;
+  puzzleCompleted = false;
 
   completePuzzle(): void {
     this.puzzleCompleted = true;

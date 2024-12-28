@@ -27,7 +27,7 @@ export class TranslationService {
    */
   constructor(
     private translateService: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     // Check if the code is running in the browser
     if (isPlatformBrowser(this.platformId)) {

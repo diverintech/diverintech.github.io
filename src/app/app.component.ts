@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared-components/footer/footer.component';
@@ -14,9 +14,9 @@ import { NavbarComponent } from './shared-components/navbar/navbar.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'Curriculum';
-  isHomePage: boolean = false;
+export class AppComponent implements OnInit {
+  public title = 'Curriculum';
+  public isHomePage = false;
 
   constructor(private translationService: TranslationService, private router: Router) { }
 
