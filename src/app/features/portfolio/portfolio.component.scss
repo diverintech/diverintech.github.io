@@ -3,6 +3,11 @@
 @use '../../../assets/shared-styles/colors.scss' as *;
 @use '../../../assets/shared-styles/text.scss' as *;
 
+.portfolio-title {
+  font-size: $font-size-xlarge;
+  justify-self: center;
+}
+
 .portfolio-container {
   margin: 5rem;
 }
