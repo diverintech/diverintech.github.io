@@ -32,24 +32,21 @@
 }
 
 .title {
-  font-family: 'Cursive', sans-serif;
   margin: 0;
   line-height: 1.1;
   letter-spacing: 1px;
   color: #333;
-  // text-transform: uppercase;
   font-weight: bold;
 }
 
 .title:first-child {
   color: #ff6347;
-  font-family: fantasy;
+  font-family: $font-family-secondary;
   font-size: $font-size-xxlarge;
 }
 
 .title:nth-child(2) {
   color: #4682b4;
-  font-family: monospace;
   font-size: $font-size-large;
 }
 
@@ -66,7 +63,6 @@
 
 .introduction {
   font-size: $font-size-small;
-  font-family: monospace;
   margin-bottom: 20px;
   text-align: left;
   line-height: 1.8;
@@ -77,6 +73,7 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 1rem;
+  font-family: $font-family-skills;
 }
 
 .skill {
@@ -104,7 +101,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-query-min('m') {
   .home-container {
     grid-template-columns: 1fr 2fr;
   }
