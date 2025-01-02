@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { UnderConstructionComponent } from '../under-construction/under-construction.component';
+import { UnderConstructionComponent } from '../../shared-components/under-construction/under-construction.component';
 
 @Component({
   selector: 'app-portfolio',
