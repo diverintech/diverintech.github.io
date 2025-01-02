@@ -1,4 +1,3 @@
-<!-- navbar.component.html -->
 <nav class="navbar" aria-label="Main navigation">
   <div class="navbar__logos">
     <a href="{{ linkedinUrl }}" target="_blank" aria-label="LinkedIn">
@@ -19,29 +18,15 @@
   </div>
 
   <div class="navbar__menu" [class.open]="menuOpen">
-    <ul
-      class="navbar__tabs"
-      (click)="closeMenu()"
-      (keydown.enter)="closeMenu()"
-      tabindex="0"
-    >
+    <ul class="navbar__tabs">
       <li>
-        <a routerLink="/home" routerLinkActive="active">{{
-          'home' | translate
-        }}</a>
+        <a href="#home" (click)="closeMenu()">{{ 'about' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/about" routerLinkActive="active">{{
-          'about' | translate
-        }}</a>
+        <a href="#work" (click)="closeMenu()">{{ 'work' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/work" routerLinkActive="active">{{
-          'work' | translate
-        }}</a>
-      </li>
-      <li>
-        <a routerLink="/portfolio" routerLinkActive="active">{{
+        <a href="#portfolio" (click)="closeMenu()">{{
           'portfolio' | translate
         }}</a>
       </li>

@@ -12,11 +12,7 @@
   "githubRepo": "https://github.com/diverintech/diverintech.github.io",
   "home": "Home",
   "homePage": {
-    "introP1": "Hello and welcome to my web page!",
-    "introP2": "I created this page with the purpose of sharing the projects I’ve been developing on GitHub, and I thought it should also be part of my portfolio.",
-    "introP3": "This page was developed using Angular (Frontend Framework), and the code is available in my public GitHub repository:",
-    "introP4": "Additionally, I used GitHub Pages to deploy it, so you can access it from anywhere without needing an IDE.",
-    "introP5": "I invite you to explore the sections above to learn more about my work:"
+    "introduction": "Hi, my name is Joana, and I’m from Portugal. I studied Physics Engineering at the Faculty of Sciences, University of Lisbon. After completing my studies, I decided to pursue a career in development to further enhance my technical skills. Currently, I work primarily as a Frontend Developer, but I’m truly inspired by understanding how everything works as a whole."
   },
   "mathButton": "Math Question",
   "myName": "Joana Pires",
@@ -36,7 +32,7 @@
   "titleHome": "Welcome!",
   "underConstruction": "This page is under construction. Please check back later!",
   "verify": "Verify",
-  "work": "Work",
+  "work": "Work Experience",
   "about": "About",
   "cancel": "Cancel",
   "company": "Company",

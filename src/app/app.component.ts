@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  NavigationEnd,
-  Router,
-  RouterModule,
-  RouterOutlet,
-} from '@angular/router';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 import { TranslationService } from './core/services/translate.service';
 import { NavbarComponent } from './shared-components/navbar/navbar.component';
+import { HomeComponent } from './features/home/home.component';
+import { WorkComponent } from './features/work/work.component';
+import { PortfolioComponent } from './features/portfolio/portfolio.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
     RouterModule,
     NavbarComponent,
     FooterComponent,
     TranslateModule,
+    HomeComponent,
+    WorkComponent,
+    PortfolioComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

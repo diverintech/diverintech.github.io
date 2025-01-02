@@ -1,5 +1,14 @@
-<app-navbar *ngIf="!isHomePage"></app-navbar>
+<app-navbar></app-navbar>
 <main>
-  <router-outlet></router-outlet>
+  <section id="home">
+    <app-home></app-home>
+  </section>
+  <section id="work">
+    <app-work></app-work>
+  </section>
+  <section id="portfolio">
+    <app-portfolio></app-portfolio>
+  </section>
 </main>
-<app-footer *ngIf="!isHomePage"></app-footer>
+
+<app-footer></app-footer>

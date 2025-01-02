@@ -4,69 +4,23 @@
 @use '../src/assets/shared-styles/mediaQueries.scss' as *;
 @use '../src/assets/shared-styles/text.scss' as *;
 
-$primary-font: 'Roboto', sans-serif;
-
-$text-black: #000;
-$text-light: #fff;
-
-$primary-color: #333;
-$secondary-color: lightgray;
-$highlight-color: #ffb800;
-$alert-color: #e74c3c;
-
-$footer-height: 60px;
-
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin background-cover($image-path) {
-  background: url(#{$image-path}) no-repeat center center fixed;
-  background-size: cover;
-}
-
 html {
   position: relative;
   min-height: 100%;
+  font-family: $font-family-primary;
 }
 
 body {
-  @include background-cover('assets/images/image01.jpeg');
-  font-family: $primary-font;
-  color: $text-light;
+  font-family: $font-family-primary;
+  color: var(--text-color-primary);
   margin: 0;
   padding: 0;
-  margin-bottom: $footer-height;
-}
-
-main {
-  flex: 1;
-  overflow: auto;
-}
-
-nav,
-footer {
-  background-color: $primary-color;
-  color: $text-light;
-}
-
-nav a,
-footer p {
-  color: $text-light;
-}
-
-// nav a:hover,
-// .actions a:hover,
-// .language-option:hover {
-//   color: $highlight-color;
-// }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: $footer-height;
-  line-height: $footer-height;
+  margin-bottom: 60px;
+  background-color: var(--background-color-primary);
 }

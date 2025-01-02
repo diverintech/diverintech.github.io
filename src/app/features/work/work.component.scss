@@ -3,19 +3,23 @@
 @use '../../../assets/shared-styles/colors.scss' as *;
 @use '../../../assets/shared-styles/text.scss' as *;
 
+.timeline-title {
+  font-size: $font-size-xlarge;
+  justify-self: center;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem auto;
   position: relative;
   max-width: 100%;
-  margin: 3rem;
+  margin: 4rem auto;
 
   &::before {
     content: '';
     position: absolute;
-    background-color: var(--background-color-primary);
+    background-color: var(--background-color-secondary);
     z-index: -1;
     width: 0.2rem;
     height: 100%;
@@ -44,8 +48,7 @@
   margin: 1rem 0;
 
   .job-info {
-    color: var(--text-color-secondary);
-    font-size: 14px;
+    font-size: $font-size-small;
     margin-bottom: 0rem;
     text-align: center;
     padding-right: 50vw;
@@ -60,7 +63,7 @@
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background-color: var(--background-color-alternative);
+    background-color: var(--background-color-alternative_3);
     cursor: pointer;
     transition:
       transform 0.2s,
@@ -73,7 +76,7 @@
     &.active {
       left: 50.33%;
       transform: translate(-50%, -50%) scale(1.2);
-      background-color: var(--background-color-primary);
+      background-color: var(--background-color-alternative_4);
     }
   }
 
@@ -100,12 +103,16 @@
     padding: 2rem;
   }
 
-  @include media-query-min('s') {
-    max-width: 80%;
+  @include media-query-min('m') {
+    max-width: 70%;
   }
 
-  @include media-query-min('m') {
-    max-width: 55%;
+  @include media-query-min('l') {
+    max-width: 60%;
+  }
+
+  @include media-query-min('xl') {
+    max-width: 50%;
   }
 }
 
@@ -155,7 +162,6 @@
 
 .job-description {
   line-height: 3vh;
-  text-align: justify;
 }
 
 h3 {

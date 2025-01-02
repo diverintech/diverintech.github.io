@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { UnderConstructionComponent } from '../../features/under-construction/under-construction.component';
+import { UnderConstructionComponent } from '../../shared-components/under-construction/under-construction.component';
 
 @Component({
   selector: 'app-puzzle',

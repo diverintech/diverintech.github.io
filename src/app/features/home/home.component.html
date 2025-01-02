@@ -1,21 +1,21 @@
 <div class="home-container">
-  <div class="information-container">
-    <h1 class="name">{{ 'myName' | translate }}</h1>
-    <h2 class="profession">{{ 'profession' | translate }}</h2>
-  </div>
-  <app-language-selector class="language-selector"></app-language-selector>
-
-  <div class="introduction">
-    <p>{{ 'homePage.introP1' | translate }}</p>
-    <!-- <p>{{ 'homePage.introP2' | translate }} </p>
-        <p>{{ 'homePage.introP3' | translate }}
-            <a [href]="'githubRepo' | translate" target="_blank">{{ 'AQUI' | translate }}</a>.
-        </p> -->
+  <div class="image-container">
+    <img src="assets/images/image04.jpeg" alt="Profile Picture" />
   </div>
 
-  <div class="buttons-container">
-    <button routerLink="/about">{{ 'about' | translate }}</button>
-    <button routerLink="/work">{{ 'work' | translate }}</button>
-    <button routerLink="/portfolio">{{ 'portfolio' | translate }}</button>
+  <div class="content-container">
+    <h1 class="title">{{ 'myName' | translate }},</h1>
+    <h2 class="title">
+      <span [innerHTML]="typedText"></span>
+    </h2>
+
+    <p class="introduction">
+      {{ 'homePage.introduction' | translate }}
+    </p>
+    <div class="skills-container">
+      <div class="skill" *ngFor="let skill of skills">
+        {{ skill.name }}
+      </div>
+    </div>
   </div>
 </div>

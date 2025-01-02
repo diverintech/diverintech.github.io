@@ -12,11 +12,7 @@
   "githubRepo": "https://github.com/diverintech/diverintech.github.io",
   "home": "Início",
   "homePage": {
-    "introP1": "Olá e bem vind@ à minha web page!",
-    "introP2": "Criei esta página com o proprósito de partilhar os projectos que tenho vindo a desenvolver no github e achei que ela prórpia devia fazer parte do meu portofólio.",
-    "introP3": "Esta página foi desenvolvida em Angular (Frontend Framework) e o código está disponível no meu repositório público do GitHub:",
-    "introP4": "Além disso, utilizei o GitHub Pages para fazer o deploy, assim podes aceder de qualquer lugar sem precisar de um IDE.",
-    "introP5": "Convido-te a explorar as seções acima para saberes mais sobre o meu trabalho:"
+    "introduction": "Olá, chamo-me Joana e vivo em Portugal. Estudei Engenharia Física na Faculdade de Ciências da Universidade de Lisboa, mas após concluir os meus estudos, decidi enveredar por uma carreira na área da programação para aprimorar as minhas competências técnicas. Atualmente, trabalho principalmente como Frontend Developer, mas fascina-me compreender como tudo funciona no seu conjunto."
   },
   "mathButton": "Questão Matemática",
   "myName": "Joana Pires",
@@ -36,7 +32,7 @@
   "titleHome": "Bem vindo!",
   "underConstruction": "Esta página está em construção. Volte mais tarde!",
   "verify": "Verificar",
-  "work": "Trabalho",
+  "work": "Experiência Profissional",
   "about": "Sobre",
   "cancel": "Cancelar",
   "company": "Empresa",

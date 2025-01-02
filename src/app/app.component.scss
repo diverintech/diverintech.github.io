@@ -1,4 +1,27 @@
+@use '../assets/shared-styles/mediaQueries.scss' as *;
+
 main {
   flex: 1;
   overflow: auto;
+}
+
+section {
+  padding-top: 6rem;
+  width: 80%;
+  justify-self: center;
+  transition: padding 0.3s ease;
+}
+
+#home {
+  padding-top: 8rem;
+}
+
+@include media-query-min('m') {
+  section {
+    padding-top: 8rem;
+  }
+
+  #home {
+    padding-top: 12rem;
+  }
 }
