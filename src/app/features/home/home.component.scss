@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20px;
 }
 
 .image-container {
@@ -41,7 +40,6 @@
 
 .title:first-child {
   color: #ff6347;
-  font-family: $font-family-secondary;
   font-size: $font-size-xxlarge;
 }
 
