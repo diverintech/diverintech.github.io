@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterLink } from '@angular/router';
-import { LanguageSelectorComponent } from '../../shared-components/language-selector/language-selector.component';
 
 @Component({
   selector: 'app-home',
@@ -11,25 +9,35 @@ import { LanguageSelectorComponent } from '../../shared-components/language-sele
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-  skills: string[] = [
-    'JavaScript',
-    'TypeScript',
-    'Angular',
-    'HTML',
-    'CSS',
-    'SCSS',
-  ];
+export class HomeComponent implements OnInit {
+  fullText = 'Software Developer';
+  typedText = '';
+  typingSpeed = 100;
 
-  // Função chamada ao passar o mouse sobre uma skill
-  highlightSkill(skill: string): void {
-    // Aqui você pode implementar a lógica para destacar a skill
-    console.log('Skill hovered:', skill);
+  skills: { name: string; category: string }[] = [
+    { name: 'TypeScript', category: 'Frontend' },
+    { name: 'Angular', category: 'Frontend' },
+    { name: 'HTML', category: 'Markup' },
+    { name: 'CSS', category: 'Styling' },
+    { name: 'AWS', category: 'Cloud' },
+    { name: 'CodeceptJS', category: 'Testing' },
+    { name: 'Cypress', category: 'Testing' },
+  ].sort((a, b) => a.name.localeCompare(b.name));
+
+  ngOnInit() {
+    this.typeText();
   }
 
-  // Função chamada ao retirar o mouse de cima de uma skill
-  removeHighlight(skill: string): void {
-    // Aqui você pode implementar a lógica para remover o destaque da skill
-    console.log('Skill mouseout:', skill);
+  typeText() {
+    let currentIndex = 0;
+
+    const interval = setInterval(() => {
+      if (currentIndex < this.fullText.length) {
+        this.typedText += this.fullText[currentIndex];
+        currentIndex++;
+      } else {
+        clearInterval(interval);
+      }
+    }, this.typingSpeed);
   }
 }

@@ -4,23 +4,17 @@
   </div>
 
   <div class="content-container">
-    <h1 class="title">{{ 'Hi' | translate }}</h1>
-    <h1 class="title">{{ 'I am Joana' | translate }}</h1>
-    <h1 class="title">{{ 'Software Developer' | translate }}</h1>
+    <h1 class="title">{{ 'myName' | translate }},</h1>
+    <h2 class="title">
+      <span [innerHTML]="typedText"></span>
+    </h2>
 
-    <p class="description">
-      {{ 'homePage.introP1' | translate }} <br />
-      {{ 'homePage.introP2' | translate }}
+    <p class="introduction">
+      {{ 'homePage.introduction' | translate }}
     </p>
-
     <div class="skills-container">
-      <div
-        class="skill"
-        *ngFor="let skill of skills"
-        (mouseenter)="highlightSkill(skill)"
-        (mouseleave)="removeHighlight(skill)"
-      >
-        {{ skill }}
+      <div class="skill" *ngFor="let skill of skills">
+        {{ skill.name }}
       </div>
     </div>
   </div>
