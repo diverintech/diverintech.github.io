@@ -6,6 +6,9 @@ import { BehaviorSubject } from 'rxjs';
 import { JOBS_PT } from '../../data/job.data.pt';
 import { JOBS_EN } from '../../data/job.data.en';
 import { Job } from '../../interfaces/job.interface';
+import { PROJECTS_EN} from "../../data/portfolio.data.en";
+import { PROJECTS_PT} from "../../data/portfolio.data.pt";
+import {Projects} from "../../interfaces/portfolio.interface";
 
 @Injectable({
   providedIn: 'root',
@@ -16,9 +19,11 @@ export class TranslationService {
 
   // BehaviorSubject to manage the state of job data
   jobsSubject = new BehaviorSubject<Job[]>([]);
+  portfolioSubject = new BehaviorSubject<Projects[]>([]);
 
   // Observable to expose the job data as a stream
   jobs$ = this.jobsSubject.asObservable();
+  portfolio$ = this.portfolioSubject.asObservable();
 
   /**
    * Constructor injects required dependencies:
@@ -54,6 +59,8 @@ export class TranslationService {
 
     // Update the job data to match the selected language
     this.updateJobsData();
+    this.updatePortfolioData();
+    console.log(this.getPortfolio());
 
     // Save the selected language to localStorage if running in the browser
     if (isPlatformBrowser(this.platformId)) {
@@ -75,11 +82,23 @@ export class TranslationService {
     }
   }
 
+  updatePortfolioData() {
+    if (this.defaultLang === 'pt') {
+      this.portfolioSubject.next(PROJECTS_PT);
+    } else {
+      this.portfolioSubject.next(PROJECTS_EN);
+    }
+  }
+
   /**
    * Retrieves the current job data as a synchronous value.
    * @returns The current array of jobs
    */
   getJobs(): Job[] {
     return this.jobsSubject.getValue();
+  }
+
+  getPortfolio(): Projects[] {
+    return this.portfolioSubject.getValue();
   }
 }

@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .image-container img {
@@ -49,7 +50,6 @@
 }
 
 .title span {
-  display: inline-block;
   animation: blink-cursor 0.7s steps(2, start) infinite;
 }
 
@@ -123,7 +123,4 @@
     font-size: $font-size-xxlarge;
   }
 
-  .introduction {
-    font-size: $font-size-medium;
-  }
 }
