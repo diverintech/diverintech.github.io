@@ -6,9 +6,9 @@ import { BehaviorSubject } from 'rxjs';
 import { JOBS_PT } from '../../data/job.data.pt';
 import { JOBS_EN } from '../../data/job.data.en';
 import { Job } from '../../interfaces/job.interface';
-import { PROJECTS_EN} from "../../data/portfolio.data.en";
-import { PROJECTS_PT} from "../../data/portfolio.data.pt";
-import {Projects} from "../../interfaces/portfolio.interface";
+import { PROJECTS_EN } from '../../data/portfolio.data.en';
+import { PROJECTS_PT } from '../../data/portfolio.data.pt';
+import { Projects } from '../../interfaces/portfolio.interface';
 
 @Injectable({
   providedIn: 'root',
