@@ -4,7 +4,7 @@ export const PROJECTS_PT: Projects[] = [
   {
     title: 'My Website',
     description:
-      'Este repo mostra o que está por trás desta minha webpage. O site está hospedado no GitHub Pages e conta com workflows de CI/CD para implantações automáticas.',
+      'Este repo mostra o que está por trás desta webpage. O site está hospedado no GitHub Pages e conta com workflows de CI/CD.',
     technologies: [
       'Angular',
       'TypeScript',

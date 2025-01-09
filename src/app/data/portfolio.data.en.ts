@@ -4,7 +4,7 @@ export const PROJECTS_EN: Projects[] = [
   {
     title: 'My Website',
     description:
-      'An interactive online resume built with Angular. The website is hosted on GitHub Pages and features CI/CD workflows for automated deployments.',
+      'This repository showcases what’s behind this webpage. The site is hosted on GitHub Pages and features CI/CD workflows.',
     technologies: [
       'Angular',
       'TypeScript',
@@ -19,21 +19,20 @@ export const PROJECTS_EN: Projects[] = [
   {
     title: 'Weather App',
     description:
-      'A dynamic weather application that fetches real-time weather data from the OpenWeatherMap API.',
+      'This application displays real-time weather data using the OpenWeatherMap API.',
     technologies: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'GitHub Actions'],
     repoPath: 'https://github.com/diverintech/angular-weather-app',
   },
   {
     title: 'To-Do List',
     description:
-      "A minimalist To-Do List application designed to explore Angular's signals for reactive state management.",
+      'I created a simple To-Do List to explore Angular signals for reactive state management.',
     technologies: ['Angular', 'TypeScript', 'HTML', 'SCSS'],
     repoPath: 'https://github.com/diverintech/angular-todo-list',
   },
   {
     title: 'Mini-Games',
-    description:
-      'A curated collection of small Python projects, including engaging mini-games and utility programs.',
+    description: 'A collection of small Python games ready to be played.',
     technologies: ['Python', 'Pandas'],
     repoPath: 'https://github.com/diverintech/python-projects',
   },
