@@ -60,7 +60,6 @@ export class TranslationService {
     // Update the job data to match the selected language
     this.updateJobsData();
     this.updatePortfolioData();
-    console.log(this.getPortfolio());
 
     // Save the selected language to localStorage if running in the browser
     if (isPlatformBrowser(this.platformId)) {

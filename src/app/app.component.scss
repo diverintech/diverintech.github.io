@@ -1,16 +1,21 @@
 @use '../assets/shared-styles/mediaQueries.scss' as *;
 
-section {
-  padding-top: 6rem;
-  width: 70%;
-  justify-self: center;
-  transition: padding 0.3s ease;
+main {
+  display: grid;
 
-  @include media-query-min('m') {
-    max-width: 60%;
+  section {
+    padding-top: 6rem;
+    width: 70%;
     justify-self: center;
+    transition: padding 0.3s ease;
+
+    @include media-query-min('m') {
+      max-width: 60%;
+      justify-self: center;
+    }
   }
 }
+
 
 #home {
   padding-top: 8rem;
