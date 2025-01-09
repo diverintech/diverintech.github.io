@@ -65,8 +65,9 @@
     border-radius: 50%;
     background-color: var(--background-color-alternative_3);
     cursor: pointer;
-    transition: transform 0.2s,
-    background-color 0.2s;
+    transition:
+      transform 0.2s,
+      background-color 0.2s;
     position: absolute;
     top: 51%;
     left: 50.32%;

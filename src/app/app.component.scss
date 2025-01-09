@@ -12,25 +12,19 @@ main {
     @include media-query-min('m') {
       max-width: 60%;
       justify-self: center;
+      padding-top: 8rem;
     }
   }
 }
 
-
 #home {
   padding-top: 8rem;
+
+  @include media-query-min('m') {
+    padding-top: 12rem;
+  }
 }
 
 #portfolio {
   padding-bottom: 4rem;
-}
-
-@include media-query-min('m') {
-  section {
-    padding-top: 8rem;
-  }
-
-  #home {
-    padding-top: 12rem;
-  }
 }
