@@ -19,7 +19,7 @@
 }
 
 .project-card {
-  background-color: #f9f9f9;
+  background-color: var(--background-color-secondary);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 2rem;
@@ -71,8 +71,8 @@
   .repo-link {
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #ff6347;
-    color: #fff;
+    background-color: var(--background-color-alternative_4);
+    color: var(--text-color-primary);
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.2s;

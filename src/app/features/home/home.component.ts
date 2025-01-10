@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
     { name: 'AWS', category: 'Cloud' },
     { name: 'CodeceptJS', category: 'Testing' },
     { name: 'Cypress', category: 'Testing' },
+    { name: 'GitHub', category: 'Version Control' },
   ].sort((a, b) => a.name.localeCompare(b.name));
 
   ngOnInit() {
