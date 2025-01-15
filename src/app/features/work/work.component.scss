@@ -124,7 +124,7 @@
     .column-1 {
       text-align: left;
       margin-bottom: 1rem;
-      margin-left: 3rem;
+      margin: auto 2rem 1rem 2rem;
 
       @include media-query-min('m') {
         margin-bottom: 0;
