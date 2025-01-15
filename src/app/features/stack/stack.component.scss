@@ -1,0 +1,43 @@
+@use '../../../../src/styles' as *;
+@use '../../../assets/shared-styles/mediaQueries.scss' as *;
+@use '../../../assets/shared-styles/colors.scss' as *;
+@use '../../../assets/shared-styles/text.scss' as *;
+
+.stack-title {
+  font-size: $font-size-xlarge;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1rem;
+  font-family: $font-family-skills;
+  justify-content: center;
+}
+
+.skill {
+  padding: 0.5rem 1.5rem;
+  font-size: $font-size-medium;
+  border: 2px solid #007acc;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #007acc;
+    color: var(--text-color-primary);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: 3px solid #005f99;
+  }
+}

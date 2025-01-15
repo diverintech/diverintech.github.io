@@ -11,7 +11,7 @@
   "githubLink": "diverintech.github.io",
   "githubRepo": "https://github.com/diverintech/diverintech.github.io",
   "home": "Home",
-  "homePage": {
+  "aboutPage": {
     "introduction": "Hi, my name is Joana, and I'm based in Portugal. I'm a Frontend developer with a passion for creating useful tools and pages that help make people's lives easier. Most of my experience is with the Angular framework, but I love exploring new technologies and tools. With a background in Engineering Physics, curiosity and problem-solving are part of who I am."
   },
   "mathButton": "Math Question",
@@ -33,7 +33,8 @@
   "underConstruction": "This page is under construction. Please check back later!",
   "verify": "Verify",
   "work": "Work Experience",
-  "about": "About",
+  "about": "About Me",
+  "myStack": "My Stack",
   "cancel": "Cancel",
   "company": "Company",
   "invalidOperationError": "Invalid operation"

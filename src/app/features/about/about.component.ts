@@ -1,9 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { MatDialog } from '@angular/material/dialog';
-import { MathQuizComponent } from '../../dialogs/math-quiz/math-quiz.component';
-import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
 
 @Component({
   selector: 'app-about',
@@ -12,28 +9,25 @@ import { PuzzleComponent } from '../../dialogs/puzzle/puzzle.component';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-export class AboutComponent {
-  showTextAboutMe = false;
+export class AboutComponent implements OnInit {
+  fullText = 'Software Developer';
+  typedText = '';
+  typingSpeed = 100;
 
-  constructor(private dialog: MatDialog) {}
-
-  openPuzzle(): void {
-    const dialogRef = this.dialog.open(PuzzleComponent);
-
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result) {
-        this.showTextAboutMe = true;
-      }
-    });
+  ngOnInit() {
+    this.typeText();
   }
 
-  openMathQuiz(): void {
-    const dialogRef = this.dialog.open(MathQuizComponent);
+  typeText() {
+    let currentIndex = 0;
 
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result) {
-        this.showTextAboutMe = true;
+    const interval = setInterval(() => {
+      if (currentIndex < this.fullText.length) {
+        this.typedText += this.fullText[currentIndex];
+        currentIndex++;
+      } else {
+        clearInterval(interval);
       }
-    });
+    }, this.typingSpeed);
   }
 }

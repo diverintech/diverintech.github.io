@@ -6,9 +6,10 @@ import { TranslateModule } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 import { TranslationService } from './core/services/translate.service';
 import { NavbarComponent } from './shared-components/navbar/navbar.component';
-import { HomeComponent } from './features/home/home.component';
+import { AboutComponent } from './features/about/about.component';
 import { WorkComponent } from './features/work/work.component';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
+import { StackComponent } from './features/stack/stack.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { PortfolioComponent } from './features/portfolio/portfolio.component';
     NavbarComponent,
     FooterComponent,
     TranslateModule,
-    HomeComponent,
+    AboutComponent,
+    StackComponent,
     WorkComponent,
     PortfolioComponent,
   ],
@@ -41,7 +43,7 @@ export class AppComponent implements OnInit {
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         this.isHomePage =
-          this.router.url === '/' || this.router.url === '/home';
+          this.router.url === '/' || this.router.url === '/about';
       });
   }
 }

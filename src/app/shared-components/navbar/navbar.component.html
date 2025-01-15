@@ -20,7 +20,10 @@
   <div class="navbar__menu" [class.open]="menuOpen">
     <ul class="navbar__tabs">
       <li>
-        <a href="#home" (click)="closeMenu()">{{ 'about' | translate }}</a>
+        <a href="#about" (click)="closeMenu()">{{ 'about' | translate }}</a>
+      </li>
+      <li>
+        <a href="#stack" (click)="closeMenu()">{{ 'myStack' | translate }}</a>
       </li>
       <li>
         <a href="#work" (click)="closeMenu()">{{ 'work' | translate }}</a>

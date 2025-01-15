@@ -22,4 +22,8 @@ export class PortfolioComponent implements OnInit {
       this.projects = portfolioData;
     });
   }
+
+  openRepo(repoPath: string): void {
+    window.open(repoPath, '_blank');
+  }
 }
