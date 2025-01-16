@@ -4,8 +4,6 @@ on:
   release:
     types:
       - created
-      - edited
-      - published
 
 jobs:
   deploy:
