@@ -28,4 +28,7 @@ jobs:
         run: ng build --base-href "/"
 
       - name: Deploy to GitHub Pages
-        run: ng deploy --base-href "/"
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist/browser
