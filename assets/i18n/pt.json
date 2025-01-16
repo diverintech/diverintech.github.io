@@ -11,7 +11,7 @@
   "githubLink": "diverintech.github.io",
   "githubRepo": "https://github.com/diverintech/diverintech.github.io",
   "home": "Início",
-  "homePage": {
+  "aboutPage": {
     "introduction": "Olá, o meu nome é Joana e sou de Portugal. Trabalho como Frontend  Developer e adoro criar aplicações úteis e que facilitem a vida das pessoas. Tenho trabalhado principalmente com a framework Angular, mas adoro explorar novas tecnologias e ferramentas. Com um background em Engenharia Física, a curiosidade e a resolução de problemas fazem parte de quem sou."
   },
   "mathButton": "Questão Matemática",
@@ -34,6 +34,7 @@
   "verify": "Verificar",
   "work": "Experiência Profissional",
   "about": "Sobre",
+  "myStack": "A minha Stack",
   "cancel": "Cancelar",
   "company": "Empresa",
   "invalidOperationError": "Operação inválida"
