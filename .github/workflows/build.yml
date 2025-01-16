@@ -33,6 +33,3 @@ jobs:
 
       - name: Build the Angular project
         run: ng build --base-href "/"
-
-      - name: Deploy to GitHub Pages
-        run: ng deploy --base-href "/diverintech.github.io"
