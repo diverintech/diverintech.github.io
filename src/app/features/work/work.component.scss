@@ -86,11 +86,11 @@
 }
 
 .job-details-main {
-  color: var(--text-color-secondary);
   margin: 1rem auto;
 
   .job-details-container {
     background-color: var(--background-color-alternative_2);
+    color: var(--text-color-secondary);
     border-radius: 10px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     display: flex;
@@ -103,80 +103,79 @@
       align-items: flex-start;
       padding: 2rem;
     }
-  }
 
-  .job-details {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    @include media-query-min('m') {
-      flex-direction: row;
-    }
-  }
-
-  .job-content {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    line-height: 2;
-
-    .column-1 {
-      text-align: left;
-      margin: auto 2rem 1rem 2rem;
+    .job-details {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
       @include media-query-min('m') {
-        margin-bottom: 0;
+        flex-direction: row;
       }
     }
 
-    .column-2 {
-      display: none;
-    }
-  }
+    .job-content {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      line-height: 2;
 
-  .job-logo {
-    place-self: center;
-    margin: 4rem auto 5rem auto;
+      .column-1 {
+        text-align: left;
+        margin: auto 2rem 1rem 2rem;
 
-    @include media-query-min('m') {
-      margin: 0 auto;
-    }
+        @include media-query-min('m') {
+          margin-bottom: 0;
+        }
+      }
 
-    .logo {
-      width: 10rem;
-      height: auto;
-      object-fit: contain;
-
-      @include media-query-min('m') {
-        margin-left: 2rem;
-        width: 8rem;
-        height: 8rem;
+      .column-2 {
+        display: none;
       }
     }
 
-    @include media-query-min('m') {
-      flex: 1;
-      text-align: right;
+    .job-logo {
+      place-self: center;
+      margin: 4rem auto 5rem auto;
+
+      @include media-query-min('m') {
+        margin: 0 auto;
+      }
+
+      .logo {
+        width: 10rem;
+        height: auto;
+        object-fit: contain;
+
+        @include media-query-min('m') {
+          margin-left: 2rem;
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+
+      @include media-query-min('m') {
+        flex: 1;
+        text-align: right;
+      }
     }
-  }
 
-  .job-company {
-    font-size: $font-size-large;
-  }
+    .job-company {
+      font-size: $font-size-large;
+    }
 
-  .job-role {
-    font-size: $font-size-medium;
-  }
+    .job-role {
+      font-size: $font-size-medium;
+    }
 
-  .job-stack {
-    font-size: $font-size-small;
-    margin: 1rem auto;
-  }
+    .job-stack {
+      font-size: $font-size-small;
+      margin: 1rem auto;
+    }
 
-  .job-description {
-    font-size: $font-size-small;
-    margin-top: 2rem;
-    color: var(--text-color-secondary);
+    .job-description {
+      font-size: $font-size-small;
+      margin-top: 2rem;
+    }
   }
 }
