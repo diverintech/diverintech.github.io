@@ -4,6 +4,8 @@ on:
   release:
     types:
       - created
+      - edited
+      - published
 
 jobs:
   deploy:
@@ -32,3 +34,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/browser
+          token: ${{ secrets.GITHUB_TOKEN }}
