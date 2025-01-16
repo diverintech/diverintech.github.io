@@ -35,4 +35,4 @@ jobs:
         run: ng build --base-href "/"
 
       - name: Deploy to GitHub Pages
-        run: ng deploy --base-href "/"
+        run: ng deploy --base-href "/diverintech.github.io"
