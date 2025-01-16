@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageSelectorComponent } from '../../shared-components/language-selector/language-selector.component';
 import { environment } from '../../../environments/environment';
+import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 
 @Component({
   selector: 'app-navbar',
@@ -15,6 +15,7 @@ export class NavbarComponent {
   linkedinUrl = `${environment.urls.linkedinUrl}`;
   githubUrl = `${environment.urls.githubUrl}`;
 
+  public activeSection = 'about';
   public menuOpen = false;
 
   public toggleMenu() {
@@ -23,5 +24,26 @@ export class NavbarComponent {
 
   public closeMenu() {
     this.menuOpen = false;
+  }
+
+  public scrollToSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+    this.activeSection = section;
+    this.closeMenu();
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    const sections = ['about', 'stack', 'work', 'portfolio'];
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+          this.activeSection = section;
+          break;
+        }
+      }
+    }
   }
 }
