@@ -19,6 +19,7 @@
 }
 
 .project-card {
+  display: grid;
   background-color: var(--background-color-secondary);
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -29,6 +30,7 @@
   transition:
     transform 0.2s,
     box-shadow 0.2s;
+  grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
 
   &:hover {
     transform: scale(1.05);
@@ -45,7 +47,7 @@
     font-size: $font-size-small;
     color: var(--text-color-secondary);
     line-height: 1.8;
-    margin: 2rem 1rem 2rem 1rem;
+    //margin: 2rem 1rem 2rem 1rem;
   }
 
   .technologies {
@@ -53,7 +55,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 3rem 0;
 
     .tech {
       display: flex;
@@ -69,13 +70,16 @@
   }
 
   .repo-link {
-    margin-top: 10px;
-    padding: 8px 12px;
     background-color: var(--background-color-alternative_4);
     color: var(--text-color-primary);
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.2s;
+    padding: 0.8rem;
+    width: max-content;
+    height: fit-content;
+    justify-self: center;
+    margin-top: 2rem;
 
     &:hover {
       background-color: #0056b3;

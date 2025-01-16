@@ -1,27 +1,16 @@
 <div class="about-container">
-  <div class="animated-container">
-    <div class="flowing-quotes">
-      <span>👨‍💻 {{ 'quotes.quote1' | translate }}</span>
-      <span>🌐 {{ 'quotes.quote2' | translate }}</span>
-      <span>✨ {{ 'quotes.quote3' | translate }}</span>
-    </div>
+  <div class="image-container">
+    <img src="../../../assets/images/image01.jpeg" alt="Profile Picture" />
   </div>
 
-  <div *ngIf="!showTextAboutMe">
-    <p class="intro">{{ 'aboutPage.introAbout' | translate }}</p>
+  <div class="content-container">
+    <h1 class="title">{{ 'myName' | translate }},</h1>
+    <h2 class="title">
+      <span [innerHTML]="typedText"></span>
+    </h2>
 
-    <div class="buttons">
-      <button mat-button (click)="openPuzzle()">
-        {{ 'puzzleButton' | translate }}
-      </button>
-      <button mat-button (click)="openMathQuiz()">
-        {{ 'mathButton' | translate }}
-      </button>
-    </div>
-  </div>
-
-  <div *ngIf="showTextAboutMe" class="showTextAboutMe">
-    <h2>{{ 'aboutPage.congratulations' | translate }}</h2>
-    <p>{{ 'aboutPage.aboutMeText' | translate }}</p>
+    <p class="introduction">
+      {{ 'aboutPage.introduction' | translate }}
+    </p>
   </div>
 </div>
