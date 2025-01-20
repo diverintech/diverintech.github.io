@@ -9,6 +9,10 @@ main {
     justify-self: center;
     transition: padding 0.3s ease;
 
+    &:last-child {
+      margin-bottom: 7rem;
+    }
+
     @include media-query-min('m') {
       max-width: 60%;
       justify-self: center;

@@ -20,12 +20,16 @@
 
 .project-card {
   display: grid;
-  background-color: var(--background-color-alternative_3);
-  color: var(--text-color-secondary);
   border-radius: 8px;
   padding: 2rem;
   text-align: center;
   grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+  border: 2px solid #007acc;
+  margin-bottom: 2rem;
+
+  @include media-query-min('m') {
+    margin-bottom: 0;
+  }
 
   h3 {
     font-size: 1.2rem;
@@ -35,7 +39,6 @@
   .description {
     font-size: $font-size-small;
     line-height: 1.8;
-    margin: 0;
   }
 
   .technologies {
@@ -67,6 +70,7 @@
     height: fit-content;
     justify-self: center;
     margin-top: 1rem;
+    background-color: #a52a2a;
 
     &:hover {
       background-color: #0056b3;
