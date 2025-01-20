@@ -20,23 +20,12 @@
 
 .project-card {
   display: grid;
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-alternative_3);
   color: var(--text-color-secondary);
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
   grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  }
 
   h3 {
     font-size: 1.2rem;
@@ -46,11 +35,13 @@
   .description {
     font-size: $font-size-small;
     line-height: 1.8;
+    margin: 0;
   }
 
   .technologies {
     display: flex;
     justify-content: center;
+    align-self: start;
     flex-wrap: wrap;
     gap: 8px;
 
@@ -67,7 +58,6 @@
   }
 
   .repo-link {
-    background-color: var(--background-color-alternative_4);
     color: var(--text-color-primary);
     text-decoration: none;
     border-radius: 4px;
@@ -76,7 +66,7 @@
     width: max-content;
     height: fit-content;
     justify-self: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     &:hover {
       background-color: #0056b3;
