@@ -16,9 +16,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
-.footer-left {
-  font-size: 14px;
+.footer-rights {
+  font-size: $font-size-small;
 }
