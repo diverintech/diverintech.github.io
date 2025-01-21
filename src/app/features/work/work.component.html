@@ -10,12 +10,9 @@
     <div class="job-info">
       <span>{{ job.company }}</span>
       <br />
-      <span
-        >{{ job.roles[0].startDate }} -
-        {{
-          job.roles[job.roles.length - 1].endDate || ('present' | translate)
-        }}</span
-      >
+      <span>
+        {{ job.roles | dateRange }}
+      </span>
     </div>
     <div class="point" [class.active]="selectedJobIndex === i"></div>
   </div>
