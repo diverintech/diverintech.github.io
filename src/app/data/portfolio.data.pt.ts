@@ -33,7 +33,7 @@ export const PROJECTS_PT: Projects[] = [
   {
     title: 'Mini-Games',
     description:
-      'Um conjunto de pequenos jogos em Python que estão prontos a ser jogados.',
+      'Conjunto de 7 jogos desenvolvidos em Python, focados na exploração da linguagem e em conceitos técnicos como "random walk"',
     technologies: ['Python', 'Pandas'],
     repoPath: 'https://github.com/diverintech/python-projects',
   },
