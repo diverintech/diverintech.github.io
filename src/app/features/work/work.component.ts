@@ -4,11 +4,12 @@ import { Job } from '../../interfaces/job.interface';
 import { TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { TranslationService } from '../../core/services/translate.service';
+import { DateRangePipe } from '../../pipes/date-range.pipe';
 
 @Component({
   selector: 'app-work',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, DateRangePipe],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })
