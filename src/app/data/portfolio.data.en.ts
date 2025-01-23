@@ -37,4 +37,11 @@ export const PROJECTS_EN: Projects[] = [
     technologies: ['Python', 'Pandas'],
     repoPath: 'https://github.com/diverintech/python-projects',
   },
+  {
+    title: 'Super Mario Shop',
+    description:
+      'A Mario Kart game store built using React with useState for state management and custom handlers for user interactions.',
+    technologies: ['React', 'JavaScript', 'HTML', 'SCSS'],
+    repoPath: 'https://github.com/diverintech/react-super-mario-shop',
+  },
 ];

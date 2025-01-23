@@ -23,6 +23,8 @@ export class TechIconPipe implements PipeTransform {
     Arduino: 'assets/icons/arduino.png',
     'Raspberry Pi': 'assets/icons/raspberry-pi.png',
     LEGO: 'assets/icons/lego.png',
+    React: 'assets/icons/react.png',
+    JavaScript: 'assets/icons/javascript.png',
   };
 
   transform(value: string): string {

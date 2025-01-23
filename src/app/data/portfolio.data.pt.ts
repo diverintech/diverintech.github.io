@@ -33,8 +33,15 @@ export const PROJECTS_PT: Projects[] = [
   {
     title: 'Mini-Games',
     description:
-      'Conjunto de 7 jogos desenvolvidos em Python, focados na exploração da linguagem e em conceitos técnicos como "random walk"',
+      'Conjunto de 7 jogos desenvolvidos em Python, focados na exploração da linguagem e em conceitos técnicos como "random walk".',
     technologies: ['Python', 'Pandas'],
     repoPath: 'https://github.com/diverintech/python-projects',
+  },
+  {
+    title: 'Super Mario Shop',
+    description:
+      'Uma loja online com jogos do Mario Kart desenvolvida em React. Utiliza useState para gestão de estado e handlers personalizados para interações do utilizador.',
+    technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
+    repoPath: 'https://github.com/diverintech/react-super-mario-shop',
   },
 ];
