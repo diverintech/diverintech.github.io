@@ -41,7 +41,7 @@ export const PROJECTS_PT: Projects[] = [
     title: 'Super Mario Shop',
     description:
       'Uma loja online com jogos do Mario Kart desenvolvida em React. Utiliza useState para gestão de estado e handlers personalizados para interações do utilizador.',
-    technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
+    technologies: ['React', 'JavaScript', 'HTML', 'SCSS'],
     repoPath: 'https://github.com/diverintech/react-super-mario-shop',
   },
 ];
