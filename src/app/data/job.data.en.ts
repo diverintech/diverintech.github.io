@@ -56,7 +56,7 @@ export const JOBS_EN: Job[] = [
       {
         title: 'Software Engineer',
         startDate: 'May 2022',
-        endDate: null,
+        endDate: 'Fev 2025',
         technologies: [
           'Angular',
           'TypeScript',
