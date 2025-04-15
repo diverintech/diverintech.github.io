@@ -56,7 +56,7 @@ export const JOBS_EN: Job[] = [
       {
         title: 'Software Engineer',
         startDate: 'May 2022',
-        endDate: 'Fev 2025',
+        endDate: 'Feb 2025',
         technologies: [
           'Angular',
           'TypeScript',
@@ -69,6 +69,16 @@ export const JOBS_EN: Job[] = [
         ],
         description:
           "I worked at Porsche's Connect Store, where I was responsible for redesigning the page using Angular. Additionally, I managed configurations in AWS, migrated repositories between organizations, created translations in the Phrase app, and performed E2E tests using CodeceptJS.",
+      },
+    ],
+  },
+  {
+    company: 'Freelancer',
+    roles: [
+      {
+        title: 'Software Engineer',
+        startDate: 'Feb 2025',
+        endDate: 'Present',
       },
     ],
   },

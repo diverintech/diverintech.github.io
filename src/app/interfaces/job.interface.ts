@@ -2,7 +2,7 @@ export interface Role {
   title: string;
   startDate: string;
   endDate: string | null;
-  technologies: string[];
+  technologies?: string[];
   description?: string;
 }
 

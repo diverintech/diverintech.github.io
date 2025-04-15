@@ -24,6 +24,7 @@
       <div class="job-logo">
         <a [href]="jobs[selectedJobIndex].website" target="_blank">
           <img
+            *ngIf="jobs[selectedJobIndex].logo"
             [src]="jobs[selectedJobIndex].logo"
             alt="{{ jobs[selectedJobIndex].company }} Logo"
             class="logo"
@@ -37,8 +38,12 @@
               jobs[selectedJobIndex].company
             }}</strong>
             <div class="job-role">{{ role.title }}</div>
-            <div class="job-stack">{{ role.technologies.join(', ') }}</div>
-            <div class="job-description">{{ role.description }}</div>
+            <div *ngIf="role.technologies" class="job-stack">
+              {{ role.technologies.join(', ') }}
+            </div>
+            <div *ngIf="role.description" class="job-description">
+              {{ role.description }}
+            </div>
           </div>
         </div>
       </div>
